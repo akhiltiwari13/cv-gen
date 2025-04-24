@@ -1,0 +1,101 @@
+/* Base styling for all resume modes */
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  margin: var(--margin-size);
+  line-height: 1.5;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 1.2em;
+}
+
+/* Text elements */
+p,
+ul,
+ol {
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+
+/* Better list formatting */
+ul,
+ol {
+  padding-left: 2em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Better horizontal rules */
+hr {
+  border: none;
+  height: 1px;
+  margin: 1.5em 0;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Code blocks */
+code {
+  font-family: monospace;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+th,
+td {
+  padding: 0.5em;
+  text-align: left;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid;
+  padding-left: 1em;
+  margin-left: 0;
+  font-style: italic;
+}

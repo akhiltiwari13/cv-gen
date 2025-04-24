@@ -1,39 +1,93 @@
-# **Jane Doe**
+# Akhil Tiwari
 
-**Address:** 123 Example Ave, Some City, ST, 99999<br>
-**Email:** jane.doe@example.com<br>
-**Phone:** (555) 123-4567<br>
+**HFT & Trading Systems Engineer | C++ Expert | Low-Latency Architect**  
+Bengaluru, India  
+📧 <akhiltiwari.13@gmail.com> | 📞 +91 8959815625  
+[GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/)
 
----
 
-## **SUMMARY**
+## 🧠 Summary
 
-Software engineer with X years of experience building high-performance, scalable backend systems. Passionate about containerization, infrastructure as code, and working on cross-functional teams to deliver robust solutions.
+Experienced software engineer with deep expertise in high-frequency trading (HFT) infrastructures, low-latency execution platforms, and real-time trading systems. Over 10 years of experience designing and optimizing ultra-low latency systems in C++. Specialized in messaging systems, tick-to-order pipelines, exchange gateways, and infrastructure benchmarking tools. Strong contributor to institutional-grade platforms.
 
----
 
-## **KEY SKILLS**
+## 💼 Experience
 
-- **Languages:** Go, Python, JavaScript
-- **Infrastructure:** Docker, Kubernetes, AWS (ECS, EC2, S3)
-- **DevOps/CI-CD:** Jenkins, GitLab CI, Terraform
-- **Databases:** MySQL, Postgres, Redis
-- **Monitoring & Logging:** Prometheus, Grafana, ELK Stack
+### **Lead Platform Engineer** — AlgoQuant, Bengaluru
 
----
+**Oct 2024 – Apr 2025**
 
-## **EXPERIENCE**
+- Built a real-time, event-driven trading platform to send IOC orders to NSE with OMS, RMS, and exchange connectivity — achieving sub-microsecond tick-to-order latency.
+- Refactored monolithic repository into modular packages using modern build tooling and Conan 2.0.
+- Enhanced observability via Tracy-based instrumentation profiling.
 
-### **Fictional Startup – Senior Software Engineer (Jan 2023 – Present)**
-- Designed and implemented a microservices architecture on AWS ECS, reducing operational costs by 20%.
-- Led a refactoring project to migrate from a monolithic Ruby on Rails app to a containerized Go-based service.
-- Automated CI/CD pipelines using GitLab CI, cutting deployment times in half.
+> **Primary toolchain:** C++20, GCC 13.1, CMake, Conan 2.0, Docker, Arch Linux
 
-### **Another Tech Co. – Software Engineer (Jul 2020 – Dec 2022)**
-- Built RESTful APIs in Go, integrated with a React front-end, handling over 10 million requests daily.
-- Optimized MySQL queries and set up Redis caching, improving response times by 30%.
-- Created detailed technical documentation and led workshops for fellow engineers.
+### **Senior Trading Systems Engineer** — Gemini, Gurugram
 
-### **Early Career Roles (Condensed)**
-- **Junior Developer, Generic Company (2018 – 2020)**
-  - Focused on Python-based data processing scripts and minor web development tasks.
+**Dec 2023 – Aug 2024**
+
+- Migrated core services from Scala to C++ for match engine and ledger.
+- Developed Kafka-based logging pipeline using modern C++ wrappers (librdkafka++)
+- Built UM-based microservices for internal trade admin tooling.
+
+> **Primary toolchain:** C++17, Clang, Bazel, Kafka, Docker
+
+### **Senior Developer for Execution Platforms** — Morgan Stanley, Bengaluru
+
+**Jun 2021 – Oct 2023**
+
+- Engineered smart order routers for Bovespa, BMV, and TSX with ~27μs median latency.
+- Developed Beneficiary Ownership Check (BOC) logic to detect wash trades.
+- Created comprehensive test frameworks using Python & Testplan.
+
+> **Primary toolchain:** C++14, GCC, Bazel, Premake, RHEL
+
+### **Manager** — Edelweiss, Mumbai
+
+**May 2019 – Jun 2021**
+
+- Maintained in-house DMA trading platform with ~200ns latency.
+- Built a .pcap-based latency profiler using libpcap++.
+- Developed institutional-grade RMS dashboards with live trading limits.
+- Built MCX adapter with new encryption specs.
+
+> **Primary toolchain:** C++14, Premake/Bazel, RHEL
+
+### **Senior Research Analyst** — Deqode, Pune
+
+**May 2018 – May 2019**
+
+- Designed Blaze Protocol — 16k TPS distributed ledger in C++.
+- Worked on BitShares fork for tokenomics + EOS smart contracts.
+
+### **Senior Software Engineer** — Barclays, Pune
+
+**Jun 2015 – May 2018**
+
+- Built backend Java APIs and C# UI (CCD) for trading support desks.
+- Awarded for reducing UI latency by 15% in large desktop apps.
+
+
+## 🧰 Technical Skills
+
+**Languages:** C++, Python, Bash, Java
+
+**Toolchains:** GCC, Clang, CMake, Bazel, Conan, Premake
+
+**Latency/Testing:** libpcap++, Tracy, GDB, Valgrind, Testplan, UM, Kafka
+
+**Monitoring:** Datadog, PagerDuty, Sentry
+
+**CI/CD:** Jenkins, GitHub, Docker
+
+**Cloud/Infra:** Hashicorp Vault, Nomad, S3, PostgreSQL
+
+
+## 📜 Certifications
+
+- **OpenShift Enterprise Development** — _Issued Dec 2017_
+- **Appian 7.11 Designer 201** — _Issued Nov 2015_
+
+
+_Optimized for C++ development, low-latency systems, exchange connectivity, and infrastructure design._

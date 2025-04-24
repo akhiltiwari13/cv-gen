@@ -1,0 +1,54 @@
+# Resume Generator Configuration
+
+# General settings
+general:
+  input_file: "RESUME.md" # Input markdown resume file
+  output_file: "resume.pdf" # Output PDF file
+
+# Rendering mode: "ats" for ATS-friendly or "custom" for styled
+mode: "ats"
+
+# Styling configuration
+styling:
+  # Font settings
+  font_family: "Arial, sans-serif"
+  font_size: "12px"
+  margin_size: "20px"
+
+  # Theme for custom mode (ignored in ATS mode)
+  # Options: default, dark, catppuccin-mocha, catppuccin-latte, nord, github-dark
+  theme: "default"
+
+  # Custom CSS file path (optional, for additional styling)
+  custom_css_path: ""
+
+# Paths configuration
+paths:
+  # Base directory for styles (relative to executable or absolute)
+  styles_dir: "./styles"
+
+  # HTML template file
+  template_file: "./templates/resume.html"
+
+  # Theme CSS files - relative to styles_dir
+  theme_files:
+    base: "base.css"
+    ats: "ats.css"
+    default: "default.css"
+    dark: "dark.css"
+    catppuccin_mocha: "catppuccin-mocha.css"
+    catppuccin_latte: "catppuccin-latte.css"
+    nord: "nord.css"
+    github_dark: "github-dark.css"
+
+# PDF generation options
+pdf:
+  dpi: 96
+  page_size: "A4"
+  margin_top: 10
+  margin_bottom: 10
+  margin_left: 10
+  margin_right: 10
+
+  # Enable unicode support
+  unicode_enabled: true

@@ -1,0 +1,80 @@
+/* Default light theme */
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111;
+}
+
+h1 {
+  color: #000;
+}
+
+h2 {
+  color: #222;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  color: #333;
+}
+
+a {
+  color: #0077cc;
+  border-bottom: 1px dotted #0077cc;
+}
+
+a:hover {
+  color: #0055aa;
+}
+
+hr {
+  background-color: #ddd;
+}
+
+strong {
+  color: #333;
+  font-weight: bold;
+}
+
+em {
+  color: #444;
+}
+
+code {
+  background-color: #f6f8fa;
+  color: #24292e;
+}
+
+/* Table styling */
+table {
+  border: 1px solid #e1e4e8;
+}
+
+th {
+  background-color: #f6f8fa;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left-color: #ddd;
+  color: #666;
+}
+
+/* List markers */
+ul li::marker {
+  color: #666;
+}

@@ -1,0 +1,87 @@
+/* Nord Theme */
+
+body {
+  background-color: #2e3440;
+  color: #d8dee9;
+}
+
+h1 {
+  color: #88c0d0;
+}
+
+h2 {
+  color: #81a1c1;
+  border-bottom: 1px solid #4c566a;
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  color: #5e81ac;
+}
+
+h4 {
+  color: #8fbcbb;
+}
+
+a {
+  color: #8fbcbb;
+  text-decoration: none;
+  border-bottom: 1px dotted #8fbcbb;
+}
+
+a:hover {
+  color: #88c0d0;
+  border-bottom-color: #88c0d0;
+}
+
+hr {
+  background-color: #4c566a;
+}
+
+strong {
+  color: #ebcb8b;
+  font-weight: bold;
+}
+
+em {
+  color: #a3be8c;
+  font-style: italic;
+}
+
+code {
+  background-color: #3b4252;
+  color: #eceff4;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "Fira Code", monospace;
+  font-size: 0.9em;
+}
+
+/* Table styling */
+table {
+  border: 1px solid #4c566a;
+}
+
+th {
+  background-color: #3b4252;
+  color: #88c0d0;
+}
+
+tr:nth-child(even) {
+  background-color: #434c5e;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left-color: #81a1c1;
+  color: #e5e9f0;
+}
+
+/* List markers */
+ul li::marker {
+  color: #88c0d0;
+}
+
+ol li::marker {
+  color: #88c0d0;
+}

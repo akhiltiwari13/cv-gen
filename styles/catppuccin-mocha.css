@@ -1,0 +1,87 @@
+/* Catppuccin Mocha Theme */
+
+body {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+}
+
+h1 {
+  color: #f5c2e7;
+}
+
+h2 {
+  color: #cba6f7;
+  border-bottom: 1px solid #313244;
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  color: #89b4fa;
+}
+
+h4 {
+  color: #74c7ec;
+}
+
+a {
+  color: #89dceb;
+  text-decoration: none;
+  border-bottom: 1px dotted #89dceb;
+}
+
+a:hover {
+  color: #94e2d5;
+  border-bottom-color: #94e2d5;
+}
+
+hr {
+  background-color: #313244;
+}
+
+strong {
+  color: #f9e2af;
+  font-weight: bold;
+}
+
+em {
+  color: #a6e3a1;
+  font-style: italic;
+}
+
+code {
+  background-color: #313244;
+  color: #f2cdcd;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.9em;
+}
+
+/* Table styling */
+table {
+  border: 1px solid #313244;
+}
+
+th {
+  background-color: #313244;
+  color: #f5c2e7;
+}
+
+tr:nth-child(even) {
+  background-color: #181825;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left-color: #cba6f7;
+  color: #bac2de;
+}
+
+/* List markers */
+ul li::marker {
+  color: #f5c2e7;
+}
+
+ol li::marker {
+  color: #f5c2e7;
+}

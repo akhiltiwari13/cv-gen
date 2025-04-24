@@ -1,34 +1,140 @@
-# Markdown-to-PDF Resume Generator
+# Enhanced Markdown-to-PDF Resume Generator
 
-This repo contains a small Go program that converts a Markdown file (e.g., `RESUME.md`) into a PDF. The main objective is to produce an **ATS-friendly** resume where the text is genuinely machine-readable, rather than rendered as images or unselectable text.
+This fork enhances the original Markdown-to-PDF Resume Generator with advanced styling options, custom themes (including Catppuccin and Nord), font customization, improved Unicode character support, and configuration file based settings.
+
+[original readme](bkp_code/README_original)
+
+## Features
+
+- **Dual Modes**: Create both ATS-friendly and visually styled resumes from the same Markdown source
+- **Configuration File**: All settings can be managed through a YAML configuration file
+- **External CSS**: Theme styling is stored in separate CSS files for easy customization
+- **Custom Themes**: Built-in support for various themes including Catppuccin Mocha, Catppuccin Latte, and Nord
+- **Font Customization**: Use any font installed on your system
+- **Unicode Support**: Properly renders international characters and symbols
+- **Modular Design**: Well-structured codebase following modern Go practices
 
 ## Why This Exists
 
-I wanted to tune and automate my resume, striking a balance between a minimal, professional format and ensuring automated screening systems can parse everything. Many PDF-export tools add excessive styling or embed fonts in ways that can confuse ATS (Applicant Tracking Systems). This project uses [blackfriday](https://github.com/russross/blackfriday) to convert Markdown to HTML and [go-wkhtmltopdf](https://github.com/SebastiaanKlippert/go-wkhtmltopdf) to render that HTML into a clean PDF.
+The original project focused solely on ATS compatibility. This fork maintains that capability while adding the option to create stylish, visually appealing resumes with a hacker aesthetic when you don't need strict ATS optimization.
 
-## How It Works
+## Project Structure
 
-1. **Markdown to HTML:** `blackfriday` converts the contents of `RESUME.md` into HTML.
-2. **HTML to PDF:** `wkhtmltopdf` (through `go-wkhtmltopdf`) turns that HTML into a PDF with minimal styling, using only system-safe fonts.
-3. **ATS-Focused Output:** The design avoids complicated layouts, columns, or embedded images. The generated PDF has real text with proper spacing and UTF-8 encoding.
+```
+resume/
+├── cmd/resume/        # Application entry point
+├── internal/          # Internal packages
+├── styles/            # CSS theme files
+├── templates/         # HTML templates
+├── config.yaml        # Default configuration
+└── README.md          # Documentation
+```
 
 ## Requirements
 
 - **Go** (1.18+ recommended)
 - **wkhtmltopdf** installed on your system  
   (e.g., on Debian-based distros: `sudo apt-get install wkhtmltopdf`; on Mac: `brew install wkhtmltopdf`)
+- System fonts for custom font options
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/enhanced-resume-generator.git
+cd enhanced-resume-generator
+
+# Build the application
+go build -o resume ./cmd/resume
+
+# Or run directly
+go run ./cmd/resume
+```
 
 ## Usage
 
-1. **Clone** this repo.
-2. **Copy** the example resume template `cp RESUME.md.example RESUME.md`
-3. **Edit** `RESUME.md` with your resume content.
-4. **Install dependencies** `go get .`
-5. **Run** `go run .`
+### Basic Usage
 
-## Tuning for ATS
+```bash
+# Generate using config file settings
+./resume
 
-- Keep your Markdown sections straightforward (headings, bullet points, short paragraphs).
-- Avoid tables, columns, or heavy images.
-- Ensure contact info appears as plain text near the top.
-- Don’t rely on external fonts or weird CSS.
+# Generate with custom options
+./resume -mode custom -theme nord -font "JetBrains Mono, monospace"
+
+# List available themes
+./resume -list-themes
+
+# List common system fonts
+./resume -list-fonts
+```
+
+### Command-line Options
+
+| Option         | Description                | Default       |
+| -------------- | -------------------------- | ------------- |
+| `-config`      | Path to configuration file | `config.yaml` |
+| `-input`       | Input markdown resume file | From config   |
+| `-output`      | Output PDF file            | From config   |
+| `-mode`        | Mode: 'ats' or 'custom'    | From config   |
+| `-theme`       | Theme for custom mode      | From config   |
+| `-font`        | Font family                | From config   |
+| `-fontsize`    | Base font size             | From config   |
+| `-margin`      | Margin size                | From config   |
+| `-css`         | Custom CSS file            | From config   |
+| `-list-themes` | List available themes      |               |
+| `-list-fonts`  | List common system fonts   |               |
+| `-version`     | Show version information   |               |
+
+### Configuration File
+
+The `config.yaml` file allows you to set all options:
+
+```yaml
+# General settings
+general:
+  input_file: "RESUME.md" # Input markdown resume file
+  output_file: "resume.pdf" # Output PDF file
+
+# Rendering mode: "ats" for ATS-friendly or "custom" for styled
+mode: "ats"
+
+# Styling configuration
+styling:
+  font_family: "Arial, sans-serif"
+  font_size: "12px"
+  margin_size: "20px"
+  theme: "default"
+  custom_css_path: ""
+# Paths and additional settings are also available
+```
+
+## Available Themes
+
+- `default` - Clean, professional light theme
+- `dark` - Dark background with light text
+- `catppuccin-mocha` - Dark Catppuccin theme with vibrant accents
+- `catppuccin-latte` - Light Catppuccin theme with pastel accents
+- `nord` - Cool blue-based dark theme
+- `github-dark` - GitHub's dark mode theme
+
+## Customizing Themes
+
+You can easily create your own themes:
+
+1. Create a new CSS file in the `styles/` directory
+2. Add the path to your theme in `config.yaml` under `paths.theme_files`
+3. Select your theme using `-theme your-theme-name`
+
+## Unicode Support
+
+This fork has enhanced Unicode character support, making it suitable for resumes in multiple languages or with special symbols. Proper UTF-8 encoding is ensured throughout the conversion pipeline.
+
+## ATS Optimization Tips
+
+When using `-mode ats`:
+
+- Keep your Markdown sections straightforward
+- Ensure contact info appears as plain text near the top
+- Avoid tables or columns
+- Don't rely on complex formatting
