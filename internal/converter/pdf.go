@@ -24,6 +24,15 @@ func HTMLToPDF(htmlContent []byte, cfg *config.Config) error {
 	// Configure page options
 	page.Encoding.Set("UTF-8")
 
+	// Enable external resources for custom mode
+	if cfg.Mode == "custom" {
+		page.EnableLocalFileAccess.Set(true)
+		page.LoadErrorHandling.Set("ignore")
+		page.LoadMediaErrorHandling.Set("ignore")
+		// page.EnableJavascript.Set(true)
+		page.JavascriptDelay.Set(1000) // Wait for fonts to load
+	}
+
 	// Set PDF generator options
 	pdfg.Dpi.Set(uint(cfg.PDF.DPI))
 	pdfg.PageSize.Set(cfg.PDF.PageSize)

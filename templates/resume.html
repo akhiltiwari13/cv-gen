@@ -3,9 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>{{.Title}}</title>
+  <title>Resume</title>
   <style>
-    /* Direct CSS injection to avoid variable processing issues */
+    /* Base styling */
+    body {
+      font-family: {{.FontFamily}};
+      font-size: {{.FontSize}};
+      margin: {{.MarginSize}};
+      line-height: 1.5;
+    }
+    
+    /* Custom styles from configuration */
     {{.Styles}}
     
     /* Print settings */

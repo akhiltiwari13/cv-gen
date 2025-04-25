@@ -1,16 +1,30 @@
 # Resume Generator Configuration
-
-# General settings
 general:
-  input_file: "RESUME.md" 
+  input_file: "RESUME.md"
   output_file: "resume.pdf"
-
-# Rendering mode: "ats" for ATS-friendly or "custom" for styled
 mode: "custom"
-
-# Styling configuration
 styling:
-  font_family: "Arial, sans-serif"
+  font_family: "monospace"
   font_size: "12px"
   margin_size: "20px"
-  theme: "nord"
+  theme: "catppuccin-mocha"
+paths:
+  styles_dir: "./styles"
+  template_file: "./templates/resume.html"
+  theme_files:
+    base: "base.css"
+    ats: "ats.css"
+    default: "default.css"
+    dark: "dark.css"
+    catppuccin_mocha: "catppuccin-mocha.css"
+    catppuccin_latte: "catppuccin-latte.css"
+    nord: "nord.css"
+    github_dark: "github-dark.css"
+pdf:
+  dpi: 300
+  page_size: "A4"
+  margin_top: 10
+  margin_bottom: 10
+  margin_left: 10
+  margin_right: 10
+  unicode_enabled: true

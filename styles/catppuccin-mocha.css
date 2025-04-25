@@ -1,30 +1,32 @@
-/* Catppuccin Mocha Theme with JetBrains Mono */
-
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+/* Catppuccin Mocha Theme */
 
 body {
   background-color: #1e1e2e !important;
   color: #cdd6f4 !important;
-  font-family: 'JetBrains Mono', monospace !important;
+  font-family: monospace !important;
   font-size: 12px !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'JetBrains Mono', monospace !important;
+  margin: 20px !important;
+  line-height: 1.6 !important;
 }
 
 h1 {
   color: #f5c2e7 !important;
+  font-size: 24px !important;
+  margin-bottom: 16px !important;
 }
 
 h2 {
   color: #cba6f7 !important;
   border-bottom: 1px solid #313244 !important;
-  padding-bottom: 0.3em;
+  padding-bottom: 8px !important;
+  margin-top: 20px !important;
+  font-size: 20px !important;
 }
 
 h3 {
   color: #89b4fa !important;
+  margin-top: 16px !important;
+  font-size: 16px !important;
 }
 
 a {
@@ -35,6 +37,9 @@ a {
 
 hr {
   background-color: #313244 !important;
+  height: 2px !important;
+  border: none !important;
+  margin: 20px 0 !important;
 }
 
 strong {
@@ -46,26 +51,39 @@ em {
   color: #a6e3a1 !important;
 }
 
-code {
-  background-color: #313244 !important;
-  color: #f2cdcd !important;
+ul, ol {
+  padding-left: 24px !important;
 }
 
-/* List styling */
-ul li::marker {
+li {
+  margin-bottom: 8px !important;
+  color: #cdd6f4 !important;
+}
+
+li::marker {
   color: #f5c2e7 !important;
 }
 
-/* Table styling */
-table {
-  border: 1px solid #313244 !important;
+p {
+  margin-bottom: 12px !important;
 }
 
-th {
-  background-color: #313244 !important;
-  color: #f5c2e7 !important;
+/* Date styling */
+.date, .location {
+  color: #bac2de !important;
+  font-style: italic !important;
 }
 
-tr:nth-child(even) {
-  background-color: #181825 !important;
+/* Specialized sections */
+.skills-section {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  grid-gap: 10px !important;
+}
+
+.primary-toolchain {
+  color: #94e2d5 !important;
+  font-style: italic !important;
+  margin-top: 8px !important;
+  font-size: 11px !important;
 }
