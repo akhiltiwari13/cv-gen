@@ -52,6 +52,7 @@ func main() {
 
 	// Load configuration
 	cfg, err := config.LoadConfig(*configFile)
+	log.Printf("Loaded config: Mode=%s, Theme=%s", cfg.Mode, cfg.Styling.Theme)
 	if err != nil {
 		log.Fatalf("Error loading configuration: %v", err)
 	}
@@ -122,27 +123,38 @@ func main() {
 
 // resolveConfigPaths ensures all paths in the config are absolute
 func resolveConfigPaths(cfg *config.Config) error {
-	// Get executable directory
-	exePath, err := os.Executable()
+	// Get current working directory
+	projectDir, err := os.Getwd()
 	if err != nil {
-		return fmt.Errorf("error getting executable path: %v", err)
+		return fmt.Errorf("error getting current directory: %v", err)
 	}
-	exeDir := filepath.Dir(exePath)
 
 	// Resolve styles directory if it's relative
 	if !filepath.IsAbs(cfg.Paths.StylesDir) {
-		cfg.Paths.StylesDir = filepath.Join(exeDir, cfg.Paths.StylesDir)
+		cfg.Paths.StylesDir = filepath.Join(projectDir, cfg.Paths.StylesDir)
 	}
 
 	// Resolve template file if it's relative
 	if !filepath.IsAbs(cfg.Paths.TemplateFile) {
-		cfg.Paths.TemplateFile = filepath.Join(exeDir, cfg.Paths.TemplateFile)
+		cfg.Paths.TemplateFile = filepath.Join(projectDir, cfg.Paths.TemplateFile)
 	}
 
 	// Resolve custom CSS path if provided and it's relative
 	if cfg.Styling.CustomCSSPath != "" && !filepath.IsAbs(cfg.Styling.CustomCSSPath) {
-		cfg.Styling.CustomCSSPath = filepath.Join(exeDir, cfg.Styling.CustomCSSPath)
+		cfg.Styling.CustomCSSPath = filepath.Join(projectDir, cfg.Styling.CustomCSSPath)
 	}
 
+	// Resolve input file if it's relative
+	if !filepath.IsAbs(cfg.General.InputFile) {
+		cfg.General.InputFile = filepath.Join(projectDir, cfg.General.InputFile)
+	}
+
+	// Resolve output file if it's relative
+	if !filepath.IsAbs(cfg.General.OutputFile) {
+		cfg.General.OutputFile = filepath.Join(projectDir, cfg.General.OutputFile)
+	}
+
+	// Add this after all command-line overrides
+	log.Printf("Final config: Mode=%s, Theme=%s", cfg.Mode, cfg.Styling.Theme)
 	return nil
 }

@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"html/template"
+	"log"
 	"os"
 	"strings"
 
@@ -48,6 +49,13 @@ func ApplyStyling(htmlContent []byte, cfg *config.Config) ([]byte, error) {
 		return nil, fmt.Errorf("error executing HTML template: %v", err)
 	}
 
+	// Save HTML for debugging
+	debugFile := "debug-output.html"
+	if err := os.WriteFile(debugFile, result.Bytes(), 0644); err != nil {
+		log.Printf("Warning: Could not save debug HTML: %v", err)
+	} else {
+		log.Printf("Saved debug HTML to %s", debugFile)
+	}
 	return result.Bytes(), nil
 }
 
@@ -56,6 +64,7 @@ func loadStyles(cfg *config.Config) (string, error) {
 	var allStyles strings.Builder
 
 	// Load base styles (always included)
+	log.Printf("Loading base styles from: %s", cfg.GetBaseStylePath())
 	baseStyles, err := utils.LoadFile(cfg.GetBaseStylePath())
 	if err != nil {
 		return "", fmt.Errorf("error loading base styles: %v", err)
@@ -63,9 +72,14 @@ func loadStyles(cfg *config.Config) (string, error) {
 	allStyles.WriteString(baseStyles)
 	allStyles.WriteString("\n\n")
 
-	// Load mode-specific styles
+	log.Printf("Using mode: %s", cfg.Mode)
+	if cfg.Mode == "custom" {
+		log.Printf("Loading theme: %s from path: %s", cfg.Styling.Theme, cfg.GetThemeCSSPath(cfg.Styling.Theme))
+	}
+
 	if cfg.Mode == "ats" {
 		// ATS mode styles
+		log.Printf("Loading ATS styles")
 		atsStyles, err := utils.LoadFile(cfg.GetATSStylePath())
 		if err != nil {
 			return "", fmt.Errorf("error loading ATS styles: %v", err)
@@ -73,13 +87,13 @@ func loadStyles(cfg *config.Config) (string, error) {
 		allStyles.WriteString(atsStyles)
 	} else {
 		// Custom mode styles - load theme
+		log.Printf("Loading custom theme styles (NOT loading ATS styles)")
 		themeStyles, err := utils.LoadFile(cfg.GetThemeCSSPath(cfg.Styling.Theme))
 		if err != nil {
 			return "", fmt.Errorf("error loading theme styles: %v", err)
 		}
 		allStyles.WriteString(themeStyles)
 	}
-
 	// Add custom CSS if provided
 	if cfg.Styling.CustomCSSPath != "" {
 		customStyles, err := utils.LoadFile(cfg.Styling.CustomCSSPath)

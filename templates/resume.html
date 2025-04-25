@@ -1,75 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>{{.Title}}</title>
   <style>
-    /* Base styling variables */
-    :root {
-      --font-family: {
-          {
-          .FontFamily
-        }
-      }
-
-      ;
-
-      --font-size: {
-          {
-          .FontSize
-        }
-      }
-
-      ;
-
-      --margin-size: {
-          {
-          .MarginSize
-        }
-      }
-
-      ;
-    }
-
-    /* Custom styles from configuration */
-      {
-        {
-        .Styles
-      }
-    }
-
-    /* Unicode rendering improvements */
-      {
-        {
-        if .UnicodeEnabled
-      }
-    }
-
-    body {
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: local('Noto Sans');
-      unicode-range: U+0080-FFFF;
-    }
-
-      {
-        {
-        end
-      }
-    }
-
+    /* Direct CSS injection to avoid variable processing issues */
+    {{.Styles}}
+    
     /* Print settings */
     @page {
       margin: 0;
     }
-
     @media print {
       body {
         -webkit-print-color-adjust: exact;
@@ -78,9 +20,7 @@
     }
   </style>
 </head>
-
 <body>
   {{.Content}}
 </body>
-
 </html>

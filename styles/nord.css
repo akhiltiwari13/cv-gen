@@ -1,87 +1,71 @@
-/* Nord Theme */
+/* Nord Theme with JetBrains Mono */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
 body {
-  background-color: #2e3440;
-  color: #d8dee9;
+  background-color: #2e3440 !important;
+  color: #d8dee9 !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 12px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'JetBrains Mono', monospace !important;
 }
 
 h1 {
-  color: #88c0d0;
+  color: #88c0d0 !important;
 }
 
 h2 {
-  color: #81a1c1;
-  border-bottom: 1px solid #4c566a;
+  color: #81a1c1 !important;
+  border-bottom: 1px solid #4c566a !important;
   padding-bottom: 0.3em;
 }
 
 h3 {
-  color: #5e81ac;
-}
-
-h4 {
-  color: #8fbcbb;
+  color: #5e81ac !important;
 }
 
 a {
-  color: #8fbcbb;
-  text-decoration: none;
-  border-bottom: 1px dotted #8fbcbb;
-}
-
-a:hover {
-  color: #88c0d0;
-  border-bottom-color: #88c0d0;
+  color: #8fbcbb !important;
+  text-decoration: none !important;
+  border-bottom: 1px dotted #8fbcbb !important;
 }
 
 hr {
-  background-color: #4c566a;
+  background-color: #4c566a !important;
 }
 
 strong {
-  color: #ebcb8b;
-  font-weight: bold;
+  color: #ebcb8b !important;
+  font-weight: bold !important;
 }
 
 em {
-  color: #a3be8c;
-  font-style: italic;
+  color: #a3be8c !important;
 }
 
 code {
-  background-color: #3b4252;
-  color: #eceff4;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-  font-family: "Fira Code", monospace;
-  font-size: 0.9em;
+  background-color: #3b4252 !important;
+  color: #eceff4 !important;
+}
+
+/* List styling */
+ul li::marker {
+  color: #88c0d0 !important;
 }
 
 /* Table styling */
 table {
-  border: 1px solid #4c566a;
+  border: 1px solid #4c566a !important;
 }
 
 th {
-  background-color: #3b4252;
-  color: #88c0d0;
+  background-color: #3b4252 !important;
+  color: #88c0d0 !important;
 }
 
 tr:nth-child(even) {
-  background-color: #434c5e;
-}
-
-/* Blockquotes */
-blockquote {
-  border-left-color: #81a1c1;
-  color: #e5e9f0;
-}
-
-/* List markers */
-ul li::marker {
-  color: #88c0d0;
-}
-
-ol li::marker {
-  color: #88c0d0;
+  background-color: #434c5e !important;
 }
