@@ -1,10 +1,8 @@
 /* Catppuccin Mocha Theme */
-
 body {
   background-color: #1e1e2e !important;
   color: #cdd6f4 !important;
   font-family: monospace !important;
-  font-size: 12px !important;
   margin: 20px !important;
   line-height: 1.6 !important;
 }
@@ -12,20 +10,19 @@ body {
 h1 {
   color: #f5c2e7 !important;
   font-size: 24px !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 10px !important;
 }
 
 h2 {
   color: #cba6f7 !important;
   border-bottom: 1px solid #313244 !important;
-  padding-bottom: 8px !important;
+  padding-bottom: 5px !important;
   margin-top: 20px !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
 }
 
 h3 {
   color: #89b4fa !important;
-  margin-top: 16px !important;
   font-size: 16px !important;
 }
 
@@ -51,12 +48,13 @@ em {
   color: #a6e3a1 !important;
 }
 
-ul, ol {
-  padding-left: 24px !important;
+ul {
+  padding-left: 20px !important;
+  list-style-type: disc !important;
 }
 
 li {
-  margin-bottom: 8px !important;
+  margin-bottom: 5px !important;
   color: #cdd6f4 !important;
 }
 
@@ -64,26 +62,15 @@ li::marker {
   color: #f5c2e7 !important;
 }
 
-p {
-  margin-bottom: 12px !important;
-}
-
-/* Date styling */
-.date, .location {
-  color: #bac2de !important;
-  font-style: italic !important;
-}
-
-/* Specialized sections */
-.skills-section {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-  grid-gap: 10px !important;
-}
-
 .primary-toolchain {
   color: #94e2d5 !important;
   font-style: italic !important;
-  margin-top: 8px !important;
-  font-size: 11px !important;
+  margin-top: 5px !important;
+  font-size: 0.9em !important;
+}
+
+/* Company/position styling */
+h3 + p {
+  color: #bac2de !important;
+  font-style: italic !important;
 }

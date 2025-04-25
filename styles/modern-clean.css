@@ -1,0 +1,76 @@
+/* Modern Clean Theme with Catppuccin Latte colors */
+body {
+  background-color: #eff1f5 !important;
+  color: #4c4f69 !important;
+  font-family: 'Arial', sans-serif !important;
+  margin: 20px !important;
+  line-height: 1.5 !important;
+}
+
+h1 {
+  color: #d20f39 !important;
+  font-size: 26px !important;
+  margin-bottom: 5px !important;
+  text-align: center !important;
+}
+
+h2 {
+  color: #8839ef !important;
+  border-bottom: 2px solid #ccd0da !important;
+  padding-bottom: 5px !important;
+  margin-top: 20px !important;
+  font-size: 18px !important;
+}
+
+h3 {
+  color: #1e66f5 !important;
+  font-size: 16px !important;
+  margin-bottom: 5px !important;
+}
+
+a {
+  color: #179299 !important;
+  text-decoration: none !important;
+}
+
+hr {
+  background-color: #ccd0da !important;
+  height: 1px !important;
+  border: none !important;
+  margin: 15px 0 !important;
+}
+
+strong {
+  color: #df8e1d !important;
+  font-weight: bold !important;
+}
+
+em {
+  color: #40a02b !important;
+}
+
+ul {
+  padding-left: 20px !important;
+}
+
+li {
+  margin-bottom: 5px !important;
+  color: #4c4f69 !important;
+}
+
+li::marker {
+  color: #d20f39 !important;
+}
+
+.primary-toolchain {
+  color: #04a5e5 !important;
+  font-style: italic !important;
+  margin-top: 5px !important;
+  font-size: 0.9em !important;
+}
+
+/* Contact info styling */
+p:first-of-type {
+  text-align: center !important;
+  margin-bottom: 15px !important;
+}
