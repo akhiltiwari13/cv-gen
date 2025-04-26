@@ -28,8 +28,6 @@ page.Encoding.Set("UTF-8")
 if cfg.Mode == "custom" {
 // Note: Some options might not be available in your version of wkhtmltopdf
 page.LoadErrorHandling.Set("ignore")
-// Use local fonts
-pdfg.NoExternalLinks.Set(false)
 }
 
 // Set PDF generator options
