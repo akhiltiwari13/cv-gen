@@ -17,13 +17,14 @@ paths:
     default: "default.css"
     dark: "dark.css"
     catppuccin_mocha: "catppuccin-mocha.css"
-    catppuccin_latte: "catppuccin-latte.css" 
+    catppuccin_latte: "catppuccin-latte.css"
     modern_clean: "modern-clean.css"
     nord: "nord.css"
     github_dark: "github-dark.css"
 pdf:
   dpi: 300
   page_size: "A4"
+  page_divisions: false
   margin_top: 10
   margin_bottom: 10
   margin_left: 10
