@@ -8,8 +8,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/codysnider/resume/internal/config"
-	"github.com/codysnider/resume/internal/utils"
+	"github.com/akhiltiwari13/resume/internal/config"
+	"github.com/akhiltiwari13/resume/internal/utils"
 )
 
 // ApplyStyling applies the appropriate styling to the HTML content

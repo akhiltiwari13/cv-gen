@@ -2,7 +2,7 @@
 
 This fork enhances the original Markdown-to-PDF Resume Generator with advanced styling options, custom themes (including Catppuccin and Nord), font customization, improved Unicode character support, and configuration file based settings.
 
-[original readme](bkp_code/README_original)
+[original readme](./README_original.md)
 
 ## Features
 

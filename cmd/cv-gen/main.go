@@ -7,9 +7,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/codysnider/resume/internal/config"
-	"github.com/codysnider/resume/internal/converter"
-	"github.com/codysnider/resume/internal/theme"
+	"github.com/akhiltiwari13/cv-gen/internal/config"
+	"github.com/akhiltiwari13/cv-gen/internal/converter"
+	"github.com/akhiltiwari13/cv-gen/internal/theme"
 )
 
 func main() {

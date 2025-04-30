@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/SebastiaanKlippert/go-wkhtmltopdf"
-	"github.com/codysnider/resume/internal/config"
+	"github.com/akhiltiwari13/cv-gen/internal/config"
 )
 
 // HTMLToPDF converts HTML content to PDF using wkhtmltopdf

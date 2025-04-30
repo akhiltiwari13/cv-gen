@@ -1,4 +1,4 @@
-module github.com/codysnider/resume
+module github.com/akhiltiwari13/cv-gen
 
 go 1.21
 

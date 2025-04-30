@@ -3,7 +3,7 @@
 
 # Define the find and replace strings
 FIND="github.com/akhiltiwari13/cv-gen"
-REPLACE="github.com/codysnider/resume"
+REPLACE="github.com/akhiltiwari13/resume"
 
 # Find all .go files and perform the replacement
 find . -name "*.go" -type f -exec sed -i '' "s|${FIND}|${REPLACE}|g" {} \;
