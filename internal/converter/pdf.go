@@ -54,9 +54,7 @@ func HTMLToPDF(htmlContent []byte, cfg *config.Config) error {
 		return fmt.Errorf("error generating PDF: %v", err)
 	}
 
-	if !cfg.PDF.PageDivisions {
-		pdfg.NoPageBreaks.Set(true)
-	}
+	// PageDivisions and NoPageBreaks handling removed to fix incompatibility
 
 	// Write the PDF to file
 	if err := pdfg.WriteFile(cfg.General.OutputFile); err != nil {

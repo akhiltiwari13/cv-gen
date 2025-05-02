@@ -43,6 +43,7 @@ type PathsConfig struct {
 type PDFConfig struct {
 	DPI            int    `yaml:"dpi"`
 	PageSize       string `yaml:"page_size"`
+	PageDivisions  bool   `yaml:"page_divisions"`
 	MarginTop      int    `yaml:"margin_top"`
 	MarginBottom   int    `yaml:"margin_bottom"`
 	MarginLeft     int    `yaml:"margin_left"`

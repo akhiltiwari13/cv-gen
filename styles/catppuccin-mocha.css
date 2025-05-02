@@ -3,21 +3,21 @@ body {
   background-color: #1e1e2e !important;
   color: #cdd6f4 !important;
   font-family: monospace !important;
-  margin: 20px !important;
-  line-height: 1.6 !important;
+  margin: 5px !important;
+  line-height: 1.4 !important;
 }
 
 h1 {
   color: #f5c2e7 !important;
-  font-size: 24px !important;
-  margin-bottom: 10px !important;
+  font-size: 22px !important;
+  margin-bottom: 1px !important;
 }
 
 h2 {
   color: #cba6f7 !important;
   border-bottom: 1px solid #313244 !important;
-  padding-bottom: 5px !important;
-  margin-top: 20px !important;
+  padding-bottom: 2px !important;
+  margin-top: 1px !important;
   font-size: 18px !important;
 }
 
@@ -36,7 +36,7 @@ hr {
   background-color: #313244 !important;
   height: 2px !important;
   border: none !important;
-  margin: 20px 0 !important;
+  margin: 5px 0 !important;
 }
 
 strong {
@@ -49,12 +49,12 @@ em {
 }
 
 ul {
-  padding-left: 20px !important;
+  padding-left: 15px !important;
   list-style-type: disc !important;
 }
 
 li {
-  margin-bottom: 5px !important;
+  margin-bottom: 1px !important;
   color: #cdd6f4 !important;
 }
 
@@ -65,12 +65,12 @@ li::marker {
 .primary-toolchain {
   color: #94e2d5 !important;
   font-style: italic !important;
-  margin-top: 5px !important;
+  margin-top: 1px !important;
   font-size: 0.9em !important;
 }
 
 /* Company/position styling */
-h3 + p {
+h3+p {
   color: #bac2de !important;
   font-style: italic !important;
 }
