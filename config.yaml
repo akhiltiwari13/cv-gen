@@ -1,13 +1,13 @@
 # Resume Generator Configuration
 general:
-  input_file: "./artifacts/input_markdown_resumes/akhil_hft_00.md"
-  output_file: "./artifacts/output_cvs/akhil_config.pdf"
+  input_file: "./artifacts/input_markdown_resumes/akhil-polyglot.md"
+  output_file: "./artifacts/output_cvs/akhil_cv.pdf"
 mode: "custom"
 styling:
   font_family: "Hack Nerd Font"
   font_size: "12px"
   margin_size: "5px"
-  theme: "catppuccin-latte"
+  theme: "catppuccin-mocha"
 paths:
   styles_dir: "./styles"
   template_file: "./templates/resume.html"
