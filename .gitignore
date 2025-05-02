@@ -2,3 +2,7 @@
 *.pdf
 RESUME.md
 CLAUDE.md
+
+
+articafts/input_markdown_resumes/*
+articafts/output_cvs/*
