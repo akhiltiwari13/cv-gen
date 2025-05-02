@@ -1,51 +1,51 @@
-/* Catppuccin Latte Theme */
+/* TokyoNight Theme */
 body {
-  background-color: #eff1f5 !important;
-  color: #4c4f69 !important;
+  background-color: #1a1b26 !important;
+  color: #c0caf5 !important;
   font-family: monospace !important;
   margin: 5px !important;
   line-height: 1.4 !important;
 }
 
 h1 {
-  color: #d20f39 !important;
+  color: #bb9af7 !important;
   font-size: 22px !important;
   margin-bottom: 1px !important;
 }
 
 h2 {
-  color: #8839ef !important;
-  border-bottom: 1px solid #ccd0da !important;
+  color: #7aa2f7 !important;
+  border-bottom: 1px solid #414868 !important;
   padding-bottom: 2px !important;
   margin-top: 1px !important;
   font-size: 18px !important;
 }
 
 h3 {
-  color: #1e66f5 !important;
+  color: #9ece6a !important;
   font-size: 16px !important;
 }
 
 a {
-  color: #179299 !important;
+  color: #7dcfff !important;
   text-decoration: none !important;
-  border-bottom: 1px dotted #179299 !important;
+  border-bottom: 1px dotted #7dcfff !important;
 }
 
 hr {
-  background-color: #ccd0da !important;
+  background-color: #414868 !important;
   height: 2px !important;
   border: none !important;
   margin: 5px 0 !important;
 }
 
 strong {
-  color: #df8e1d !important;
+  color: #e0af68 !important;
   font-weight: bold !important;
 }
 
 em {
-  color: #40a02b !important;
+  color: #9ece6a !important;
 }
 
 ul {
@@ -55,21 +55,21 @@ ul {
 
 li {
   margin-bottom: 1px !important;
-  color: #4c4f69 !important;
+  color: #c0caf5 !important;
 }
 
 li::marker {
-  color: #d20f39 !important;
+  color: #bb9af7 !important;
 }
 
 .primary-toolchain {
-  color: #209fb5 !important;
+  color: #2ac3de !important;
   font-style: italic !important;
   margin-top: 1px !important;
   font-size: 0.9em !important;
 }
 
 h3+p {
-  color: #5c5f77 !important;
+  color: #a9b1d6 !important;
   font-style: italic !important;
 }

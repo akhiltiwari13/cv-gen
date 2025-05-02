@@ -1,13 +1,13 @@
 # Resume Generator Configuration
 general:
-  input_file: "RESUME.md"
-  output_file: "resume.pdf"
+  input_file: "./artifacts/input_markdown_resumes/akhil_hft_00.md"
+  output_file: "./artifacts/output_cvs/akhil_config.pdf"
 mode: "custom"
 styling:
-  font_family: "monospace"
+  font_family: "Hack Nerd Font"
   font_size: "12px"
-  margin_size: "20px"
-  theme: "catppuccin-mocha"
+  margin_size: "5px"
+  theme: "catppuccin-latte"
 paths:
   styles_dir: "./styles"
   template_file: "./templates/resume.html"
@@ -15,7 +15,7 @@ paths:
     base: "base.css"
     ats: "ats.css"
     default: "default.css"
-    dark: "dark.css"
+    tokyonight: "tokyonight.css"
     catppuccin_mocha: "catppuccin-mocha.css"
     catppuccin_latte: "catppuccin-latte.css"
     modern_clean: "modern-clean.css"
@@ -25,8 +25,8 @@ pdf:
   dpi: 300
   page_size: "A4"
   page_divisions: false
-  margin_top: 10
-  margin_bottom: 10
-  margin_left: 10
-  margin_right: 10
+  margin_top: 5
+  margin_bottom: 5
+  margin_left: 5
+  margin_right: 5
   unicode_enabled: true

@@ -111,7 +111,7 @@ func loadStyles(cfg *config.Config) (string, error) {
 func DisplayAvailableThemes() {
 	fmt.Println("Available Themes:")
 	fmt.Println("  - default: Clean, professional light theme")
-	fmt.Println("  - dark: Dark background with light text")
+	fmt.Println("  - tokyonight: inspired by vim colorscheme of the same name")
 	fmt.Println("  - catppuccin-mocha: Dark Catppuccin theme with vibrant accents")
 	fmt.Println("  - catppuccin-latte: Light Catppuccin theme with pastel accents")
 	fmt.Println("  - nord: Cool blue-based dark theme")

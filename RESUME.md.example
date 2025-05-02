@@ -1,93 +1,71 @@
-# Akhil Tiwari
+# **Akhil Tiwari**
 
-**HFT & Trading Systems Engineer | C++ Expert | Low-Latency Architect**  
-Bengaluru, India  
-📧 <akhiltiwari.13@gmail.com> | 📞 +91 8959815625  
-[GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/)
+Bengaluru, India  | +91 8959815625
+[email](akhiltiwari.13@gmail.com) | [GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/)
 
+---
 
-## 🧠 Summary
+## **SUMMARY**
 
-Experienced software engineer with deep expertise in high-frequency trading (HFT) infrastructures, low-latency execution platforms, and real-time trading systems. Over 10 years of experience designing and optimizing ultra-low latency systems in C++. Specialized in messaging systems, tick-to-order pipelines, exchange gateways, and infrastructure benchmarking tools. Strong contributor to institutional-grade platforms.
+Computer Scientist with deep expertise in HFT, low-latency execution platforms, and real-time trading systems. Over 10 years of experience designing and optimizing ultra-low latency systems. Specialized in tick-to-order pipelines, messaging systems, exchange gateways, and infrastructure testing/benchmarking.
 
+---
 
-## 💼 Experience
+## **EXPERIENCE**
 
-### **Lead Platform Engineer** — AlgoQuant, Bengaluru
+### **Lead Trading Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Bengaluru (Oct 2024 – Apr 2025)**
 
-**Oct 2024 – Apr 2025**
-
-- Built a real-time, event-driven trading platform to send IOC orders to NSE with OMS, RMS, and exchange connectivity — achieving sub-microsecond tick-to-order latency.
-- Refactored monolithic repository into modular packages using modern build tooling and Conan 2.0.
+- Built a real-time, events-driven trading platform to send IOC orders to NSE with OMS, RMS, and exchange connectivity — achieving sub-microsecond tick-to-order latency.
+- Improved Dependency management for an  existing monorepo project using a modern build toolchain and Conan 2.0.
 - Enhanced observability via Tracy-based instrumentation profiling.
+- **Primary toolchain:** C++20, GCC 13.1, CMake, Conan 2.0, Docker, Ubuntu 22.04 & Arch Linux
 
-> **Primary toolchain:** C++20, GCC 13.1, CMake, Conan 2.0, Docker, Arch Linux
+### **Senior Trading Systems Engineer – [Gemini](https://www.gemini.com/) , Gurugram (Dec 2023 – Aug 2024)**
 
-### **Senior Trading Systems Engineer** — Gemini, Gurugram
-
-**Dec 2023 – Aug 2024**
-
-- Migrated core services from Scala to C++ for match engine and ledger.
+- Migrated core services from Scala to C++ for match-engine and ledger.
 - Developed Kafka-based logging pipeline using modern C++ wrappers (librdkafka++)
 - Built UM-based microservices for internal trade admin tooling.
+- **Primary toolchain:** C++17, Scala, Clang, Bazel, Kafka, Docker
 
-> **Primary toolchain:** C++17, Clang, Bazel, Kafka, Docker
-
-### **Senior Developer for Execution Platforms** — Morgan Stanley, Bengaluru
-
-**Jun 2021 – Oct 2023**
+### **Developer for Execution Platforms – [Morgan Stanley](https://www.morganstanley.com/), Bengaluru (Jun 2021 – Oct 2023)**
 
 - Engineered smart order routers for Bovespa, BMV, and TSX with ~27μs median latency.
 - Developed Beneficiary Ownership Check (BOC) logic to detect wash trades.
 - Created comprehensive test frameworks using Python & Testplan.
+- **Primary toolchain:** C++14, GCC, Bazel, Premake, RHEL
 
-> **Primary toolchain:** C++14, GCC, Bazel, Premake, RHEL
-
-### **Manager** — Edelweiss, Mumbai
-
-**May 2019 – Jun 2021**
+### **Trading Systems Engineer – [Edelweiss](https://www.edelweissfin.com/), Mumbai (May 2019 – Jun 2021)**
 
 - Maintained in-house DMA trading platform with ~200ns latency.
 - Built a .pcap-based latency profiler using libpcap++.
 - Developed institutional-grade RMS dashboards with live trading limits.
 - Built MCX adapter with new encryption specs.
+- **Primary toolchain:** C++14, Premake/Bazel, RHEL
 
-> **Primary toolchain:** C++14, Premake/Bazel, RHEL
-
-### **Senior Research Analyst** — Deqode, Pune
-
-**May 2018 – May 2019**
+### **Senior Research Analyst –[Deqode](https://deqode.com/), Pune (May 2018 – May 2019)**
 
 - Designed Blaze Protocol — 16k TPS distributed ledger in C++.
 - Worked on BitShares fork for tokenomics + EOS smart contracts.
 
-### **Senior Software Engineer** — Barclays, Pune
-
-**Jun 2015 – May 2018**
+### **Senior Software Engineer –[Barclays](https://home.barclays/), Pune (Jun 2015 – May 2018)**
 
 - Built backend Java APIs and C# UI (CCD) for trading support desks.
 - Awarded for reducing UI latency by 15% in large desktop apps.
 
+---
 
-## 🧰 Technical Skills
-
-**Languages:** C++, Python, Bash, Java
-
-**Toolchains:** GCC, Clang, CMake, Bazel, Conan, Premake
-
-**Latency/Testing:** libpcap++, Tracy, GDB, Valgrind, Testplan, UM, Kafka
-
-**Monitoring:** Datadog, PagerDuty, Sentry
-
-**CI/CD:** Jenkins, GitHub, Docker
-
-**Cloud/Infra:** Hashicorp Vault, Nomad, S3, PostgreSQL
-
-
-## 📜 Certifications
+## **CERTIFICATIONS**
 
 - **OpenShift Enterprise Development** — _Issued Dec 2017_
 - **Appian 7.11 Designer 201** — _Issued Nov 2015_
 
+---
 
-_Optimized for C++ development, low-latency systems, exchange connectivity, and infrastructure design._
+## **KEY SKILLS**
+
+- **Programming Languages:** C++, Python, Go,  Bash, Java, Rust & Zig
+- **Toolchains:** GCC, Clang, CMake, Bazel, Conan, Premake, pip & various Linux distros (Debian, Ubuntu, RHEL etc..)
+- **Benchmarking/Monitoring Utilities** googletest, googlebenchmark, libpcap++, Tracy, GDB, Valgrind & Testplan.
+- **Devops utilities:** Jenkins, GitHub/Bitbucket/GitLab, Docker, Hashicorp Vault, PagerDuty, Sentry, Nomad, EC2 & S3.
+- **Messaging/Storage:**  UltraMessaging, Rabbitmq, Kafka, PostgreSQL & Datadog,
+- **Protocols:**  AMQP, gRPC, http/https, SBE, FIX, Protobuf, yaml/toml/json etc.
