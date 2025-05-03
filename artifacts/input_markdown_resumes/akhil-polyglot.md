@@ -1,13 +1,13 @@
 # **Akhil Tiwari**
 
-Bengaluru, India | +91 8959815625  
+Delhi, India | +91 8959815625  
 [email](mailto:akhiltiwari.13@gmail.com) | [GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/)
 
 ---
 
 ## **SUMMARY**
 
-Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrastructure, and distributed platforms. Known for crafting performant systems in C++, debugging race conditions in production, and accelerating time-to-fix for critical issues. Strong ownership in end-to-end system design and testing across multiple global exchanges.
+Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrastructure, and distributed platforms. Known for crafting institutional grade performant platforms, debugging production bugs, and accelerating time-to-fix for critical issues. Strong ownership in end-to-end system design and testing across multiple global exchanges.
 
 ---
 
@@ -58,7 +58,7 @@ Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrast
 
 ---
 
-## **SKILLS**
+## **SKILLS & EDUCATION**
 
 **Languages:** C++ (11–20), Python, Go, Java, C#, Bash, Javascript, Rust, Zig.
 **Tools:** Bazel, CMake, Conan, Premake, Docker, GCC, Clang
@@ -67,17 +67,14 @@ Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrast
 **Messaging/Protocols:** Kafka, UM, RabbitMQ, FIX, SBE, gRPC, Protobuf, Cap’n Proto  
 **Data/Infra:** PostgreSQL, Datadog, Ubuntu, RHEL, Arch Linux
 **Distros:** Ubuntu, Arch, RHEL, Debian.
+**BPM Suites** Appian, jBPM, IBMBpm.
 **Nics:** Solarflare X3, Exanic.
+**Education:** Bachelor of Engineering from Devi Ahilya University, Indore – 78% (Hon.) (Jun 2011 – May 2015)
 
 ---
 
-## **CERTIFICATIONS**
+## **CERTIFICATIONS & PUBLICATIONS**
 
 - **OpenShift Enterprise Development** — Dec 2017
 - **Appian 7.11 Designer 201** — Nov 2015
-
----
-
-## **REFERENCES**
-
-Available upon request.
+- A [blogpost to get started with eosio smart contracts](https://deqode.com/blog/2019/02/12/eosio-smart-contracts/)

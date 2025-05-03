@@ -25,8 +25,8 @@ pdf:
   dpi: 300
   page_size: "A4"
   page_divisions: false
-  margin_top: 5
-  margin_bottom: 5
-  margin_left: 5
-  margin_right: 5
+  margin_top: 3
+  margin_bottom: 2
+  margin_left: 3
+  margin_right: 3
   unicode_enabled: true
