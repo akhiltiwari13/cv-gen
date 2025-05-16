@@ -1,1 +1,123 @@
 /* Base styling */
+/* styles/base.css */
+/* Base styling for all resume modes */
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  margin: var(--margin-size);
+  line-height: 1.4;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 1.3em;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+/* Text elements */
+p, ul, ol {
+  margin-bottom: 0.8em;
+}
+
+/* List formatting */
+ul, ol {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Horizontal rules */
+hr {
+  border: none;
+  height: 1px;
+  margin: 1.2em 0;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Code blocks */
+code {
+  font-family: monospace;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+th, td {
+  padding: 0.4em;
+  text-align: left;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 3px solid;
+  padding-left: 1em;
+  margin-left: 0;
+  font-style: italic;
+}
+
+/* Contact information */
+.contact-info {
+  margin-bottom: 1em;
+}
+
+/* Skills section */
+.skills-section {
+  margin-top: 1em;
+}
+
+/* Project section */
+.project-section {
+  margin-top: 1em;
+}
+
+/* Icons and emoji support */
+.icon {
+  margin-right: 0.3em;
+}
+
+/* Date ranges */
+.date-range {
+  display: inline-block;
+}
+
+/* Organizations/companies */
+.organization {
+  display: inline-block;
+}

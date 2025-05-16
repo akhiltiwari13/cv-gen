@@ -5,6 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/akhiltiwari13/cv-gen/internal/logging"
 	"gopkg.in/yaml.v3"
 )
 
@@ -53,30 +54,45 @@ type PDFConfig struct {
 
 // LoadConfig loads the configuration from a YAML file
 func LoadConfig(path string) (*Config, error) {
+	logger := logging.GetLogger()
+	logger.Debug().Str("config_path", path).Msg("Loading configuration file")
 	// Check if file exists
 	if _, err := os.Stat(path); os.IsNotExist(err) {
 		return nil, fmt.Errorf("configuration file not found: %s", path)
 	}
 
 	// Read file
+	logger.Debug().Str("path", path).Msg("Reading configuration file")
 	data, err := os.ReadFile(path)
 	if err != nil {
+		logger.Error().Err(err).Str("path", path).Msg("Error reading config file")
 		return nil, fmt.Errorf("error reading config file: %v", err)
 	}
 
 	// Parse YAML
+	logger.Debug().Msg("Parsing YAML configuration")
 	var cfg Config
 	if err = yaml.Unmarshal(data, &cfg); err != nil {
+		logger.Error().Err(err).Msg("Error parsing config file")
 		return nil, fmt.Errorf("error parsing config file: %v", err)
 	}
 
 	// Apply defaults for missing values
+	logger.Debug().Msg("Applying default configuration values")
 	applyDefaults(&cfg)
 
 	// Validate configuration
+	logger.Debug().Msg("Validating configuration")
 	if err = validateConfig(&cfg); err != nil {
+		logger.Error().Err(err).Msg("Configuration validation failed")
 		return nil, err
 	}
+	logger.Debug().
+		Str("mode", cfg.Mode).
+		Str("theme", cfg.Styling.Theme).
+		Str("input_file", cfg.General.InputFile).
+		Str("output_file", cfg.General.OutputFile).
+		Msg("Configuration loaded successfully")
 
 	return &cfg, nil
 }

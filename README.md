@@ -1,7 +1,6 @@
 # Enhanced Markdown-to-PDF Resume Generator
 
-This fork enhances the original Markdown-to-PDF Resume Generator with advanced styling options, custom themes (including Catppuccin and Nord), font customization, improved Unicode character support, and configuration file based settings.
-
+This fork enhances the original Markdown-to-PDF Resume Generator with advanced styling options, custom themes (including Professional, Catppuccin and Nord), font customization, improved Unicode character support, and comprehensive logging.
 [original readme](./README_original.md)
 
 ## Features
@@ -12,17 +11,18 @@ This fork enhances the original Markdown-to-PDF Resume Generator with advanced s
 - **Custom Themes**: Built-in support for various themes including Catppuccin Mocha, Catppuccin Latte, and Nord
 - **Font Customization**: Use any font installed on your system
 - **Unicode Support**: Properly renders international characters and symbols
+- **Detailed Logging**: Comprehensive logging throughout the application for easier debugging
 - **Modular Design**: Well-structured codebase following modern Go practices
 
 ## Why This Exists
 
-The original project focused solely on ATS compatibility. This fork maintains that capability while adding the option to create stylish, visually appealing resumes with a hacker aesthetic when you don't need strict ATS optimization.
+The original project focused solely on ATS compatibility. This fork maintains that capability while adding the option to create stylish, visually appealing resumes with a hacker aesthetic when you don't need strict ATS adherence.
 
 ## Project Structure
 
 ```
-resume/
-├── cmd/resume/        # Application entry point
+cv-gen/
+├── cmd/cv-gen/        # Application entry point
 ├── internal/          # Internal packages
 ├── styles/            # CSS theme files
 ├── templates/         # HTML templates
@@ -33,7 +33,7 @@ resume/
 ## Requirements
 
 - **Go** (1.18+ recommended)
-- **wkhtmltopdf** installed on your system  
+- **wkhtmltopdf** installed on your system
   (e.g., on Debian-based distros: `sudo apt-get install wkhtmltopdf`; on Mac: `brew install wkhtmltopdf`)
 - System fonts for custom font options
 
@@ -41,14 +41,14 @@ resume/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/enhanced-resume-generator.git
-cd enhanced-resume-generator
+git clone https://github.com/akhiltiwari13/cv-gen.git
+cd cv-gen
 
 # Build the application
-go build -o resume ./cmd/resume
+go build -o cv-gen ./cmd/cv-gen
 
 # Or run directly
-go run ./cmd/resume
+go run ./cmd/cv-gen
 ```
 
 ## Usage
@@ -57,17 +57,18 @@ go run ./cmd/resume
 
 ```bash
 # Generate using config file settings
-./resume
+./cv-gen
 
 # Generate with custom options
-./resume -mode custom -theme nord -font "JetBrains Mono, monospace"
+./cv-gen -mode custom -theme nord -font "JetBrains Mono, monospace"
 
 # List available themes
-./resume -list-themes
+./cv-gen -list-themes
 
 # List common system fonts
-./resume -list-fonts
+./cv-gen -list-fonts
 ```
+
 
 ### Command-line Options
 
@@ -82,6 +83,8 @@ go run ./cmd/resume
 | `-fontsize`    | Base font size             | From config   |
 | `-margin`      | Margin size                | From config   |
 | `-css`         | Custom CSS file            | From config   |
+| `-log-level`         | Logging level| info   |
+| `-pretty-log`         | Use pretty logging format| true   |
 | `-list-themes` | List available themes      |               |
 | `-list-fonts`  | List common system fonts   |               |
 | `-version`     | Show version information   |               |
@@ -111,6 +114,7 @@ styling:
 
 ## Available Themes
 
+- `professional` - Modern professional resume style (ATS compatible)
 - `default` - Clean, professional light theme
 - `dark` - Dark background with light text
 - `catppuccin-mocha` - Dark Catppuccin theme with vibrant accents

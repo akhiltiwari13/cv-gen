@@ -1,1 +1,97 @@
 /* Default theme */
+/* styles/default.css */
+/* Default light theme - professional and clean */
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+}
+
+h2 {
+  color: #2E86C1;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  color: #333;
+}
+
+a {
+  color: #0077cc;
+  border-bottom: 1px dotted #0077cc;
+}
+
+a:hover {
+  color: #0055aa;
+}
+
+hr {
+  background-color: #ddd;
+}
+
+strong {
+  color: #333;
+  font-weight: bold;
+}
+
+em {
+  color: #444;
+}
+
+code {
+  background-color: #f6f8fa;
+  color: #24292e;
+}
+
+/* Table styling */
+table {
+  border: 1px solid #e1e4e8;
+}
+
+th {
+  background-color: #f6f8fa;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left-color: #ddd;
+  color: #666;
+}
+
+/* List markers */
+ul li::marker {
+  color: #666;
+}
+
+/* Contact information */
+.contact-info {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Date ranges */
+.date-range {
+  color: #666;
+  font-weight: normal;
+}
+
+/* Skills section */
+.skills-category {
+  font-weight: bold;
+  color: #333;
+}

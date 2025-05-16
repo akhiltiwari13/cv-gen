@@ -15,7 +15,7 @@ Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrast
 
 ### **Lead Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Bengaluru (Oct 2024 – Apr 2025)**
 
-- Created IOC (Immediate or Cancel) trading system with < 1μs latency using OMS, RMS, and direct exchange integration.
+- Created IOC (Immediate or Cancel) trading system with < 1μs latency using OMS, RMS and direct exchange integration.
 - Spearheaded observability and instrumentation profiling of the platform using Tracy,
 - Refactored monorepo dependency system via Conan 2.0, enabling reproducible builds.
 - Diagnosed & resolved performance regressions across critical path modules.

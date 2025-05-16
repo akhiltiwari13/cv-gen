@@ -15,7 +15,7 @@ Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrast
 
 ### **Lead Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Bengaluru (Oct 2024 – Apr 2025)**
 
-- Built IOC (Immediate or Cancel) trading system with sub-microsecond latencies using OMS, RMS, and exchange integration.
+- Built IOC (Immediate or Cancel) trading system with sub-microsecond latency including OMS, RMS and exchange integration.
 - Introduced detailed instrumentation and profiling using Tracy for bottleneck identification.
 - Modernized internal dependency management via Conan 2.0 for reproducible builds.
 - Diagnosed and resolved performance bottlenecks across key trading paths.
@@ -29,7 +29,7 @@ Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrast
 
 ### **Execution Platform Developer – [Morgan Stanley](https://www.morganstanley.com/), Bengaluru (Jun 2021 – Oct 2023)**
 
-- Delivered smart order routers (SORs) for LATAM exchanges achieving 27μs median latency.
+- Delivered smart order routers (SORs) for LATAM exchanges achieving ~27μs median latency.
 - Implemented self-cross prevention logic ensuring regulatory compliance.
 - Built Python simulation suite to automate 200+ exchange scenarios.
 - Identified and fixed kernel-level queuing issues impacting trade latency.

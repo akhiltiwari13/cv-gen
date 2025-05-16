@@ -1,34 +1,63 @@
+<!-- templates/resume.html -->
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Resume</title>
-  <style>
-    /* Base styling */
-    body {
-      font-family: {{.FontFamily}};
-      font-size: {{.FontSize}};
-      margin: {{.MarginSize}};
-      line-height: 1.5;
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{.Title}}</title>
+    <style>
+    /* Base styling variables */
+    :root {
+      --font-family: {{.FontFamily}};
+    --font-size: {{.FontSize}};
+    --margin-size: {{.MarginSize}};
     }
-    
+
     /* Custom styles from configuration */
     {{.Styles}}
-    
+
+    /* Unicode rendering improvements */
+    {{if .UnicodeEnabled}}
+    body {
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      src: local('Noto Sans');
+      unicode-range: U+0080-FFFF;
+    }
+    {{end}}
+
     /* Print settings */
     @page {
       margin: 0;
     }
+
     @media print {
       body {
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
+
+      /* Ensure page breaks don't occur within sections */
+      h2 {
+        page-break-after: avoid;
+      }
+
+      h3, h4 {
+        page-break-after: avoid;
+      }
+
+      li, blockquote {
+        page-break-inside: avoid;
+      }
     }
-  </style>
-</head>
-<body>
-  {{.Content}}
-</body>
+    </style>
+  </head>
+  <body>
+    {{.Content}}
+  </body>
 </html>
