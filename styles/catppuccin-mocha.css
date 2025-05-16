@@ -2,7 +2,7 @@
 body {
   background-color: #1e1e2e !important;
   color: #cdd6f4 !important;
-  font-family: monospace !important;
+  font-family: JetBrainsMono NF !important;
   margin: 5px !important;
   line-height: 1.4 !important;
 }
@@ -74,3 +74,4 @@ h3+p {
   color: #bac2de !important;
   font-style: italic !important;
 }
+
