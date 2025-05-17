@@ -1,44 +1,67 @@
-/* Catppuccin Mocha Theme */
 body {
   background-color: #1e1e2e !important;
   color: #cdd6f4 !important;
-  font-family: JetBrainsMono NF !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 10.5pt !important;
   margin: 5px !important;
-  line-height: 1.4 !important;
+  line-height: 1.3 !important;
 }
 
+/* Name styling */
 h1 {
   color: #f5c2e7 !important;
   font-size: 22px !important;
-  margin-bottom: 1px !important;
+  margin-bottom: 5px !important;
+  text-align: center !important;
 }
 
+/* Contact information on one line */
+p:first-of-type {
+  text-align: center !important;
+  margin-bottom: 10px !important;
+  white-space: nowrap !important; /* Forces content to stay on one line */
+}
+
+p:first-of-type a {
+  color: #89dceb !important;
+  text-decoration: none !important;
+}
+
+/* Section headers */
 h2 {
   color: #cba6f7 !important;
   border-bottom: 1px solid #313244 !important;
   padding-bottom: 2px !important;
-  margin-top: 1px !important;
-  font-size: 18px !important;
+  margin-top: 15px !important;
+  margin-bottom: 10px !important;
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
 }
 
+/* Job titles */
 h3 {
   color: #89b4fa !important;
-  font-size: 16px !important;
+  font-size: 13px !important;
+  margin-bottom: 5px !important;
+  margin-top: 10px !important;
 }
 
-a {
+/* Company links styling */
+h3 a {
   color: #89dceb !important;
   text-decoration: none !important;
-  border-bottom: 1px dotted #89dceb !important;
 }
 
+/* Horizontal rules */
 hr {
   background-color: #313244 !important;
-  height: 2px !important;
+  height: 1px !important;
   border: none !important;
-  margin: 5px 0 !important;
+  margin: 10px 0 !important;
 }
 
+/* Text emphasis */
 strong {
   color: #f9e2af !important;
   font-weight: bold !important;
@@ -48,30 +71,59 @@ em {
   color: #a6e3a1 !important;
 }
 
+/* Fix bullet points */
 ul {
-  padding-left: 15px !important;
-  list-style-type: disc !important;
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+  padding-left: 20px !important;
+  list-style-type: none !important;
 }
 
 li {
-  margin-bottom: 1px !important;
-  color: #cdd6f4 !important;
+  margin-bottom: 2px !important;
+  position: relative !important;
+  padding-left: 15px !important;
 }
 
-li::marker {
+li::before {
+  content: "•" !important;
+  position: absolute !important;
+  left: 0 !important;
   color: #f5c2e7 !important;
 }
 
-.education {
-  color: #94e2d5 !important;
-  font-style: italic !important;
-  margin-top: 1px !important;
-  font-size: 0.9em !important;
-}
-
-/* Company/position styling */
-h3+p {
+/* For date ranges and locations */
+.date-range {
+  float: right !important;
   color: #bac2de !important;
-  font-style: italic !important;
+  font-size: 10pt !important;
 }
 
+/* For company/institution names */
+.organization {
+  font-weight: bold !important;
+}
+
+/* Skills section */
+.skills-category {
+  color: #f9e2af !important;
+  font-weight: bold !important;
+  margin-right: 5px !important;
+}
+
+/* Make links stand out */
+a {
+  color: #89dceb !important;
+  text-decoration: none !important;
+  border-bottom: 1px dotted #89dceb !important;
+}
+
+/* Add spacing for job sections to keep content together */
+h3 + ul {
+  margin-top: 2px !important;
+}
+
+/* Adjust spacing for certifications and publications */
+h2:last-of-type + ul {
+  margin-top: 5px !important;
+}

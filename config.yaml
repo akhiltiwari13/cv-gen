@@ -3,11 +3,25 @@ general:
   input_file: "./artifacts/input_markdown_resumes/akhil-hft.md"
   output_file: "./artifacts/output_cvs/akhil_hft00.pdf"
 mode: "custom"
+# professional themed resume.
+# styling:
+#   font_family: "Arial, sans-serif"
+#   font_size: "12px"
+#   margin_size: "5px"
+#   theme: "professional"
+# # catppuccin-mocha
+# styling:
+#   font_family: "JetBrains Mono, monospace"
+#   font_size: "10.5pt"
+#   margin_size: "5px"
+#   theme: "catppuccin-mocha"
+
+# catppuccin-latte
 styling:
-  font_family: "Arial, sans-serif"
-  font_size: "12px"
+  font_family: "Calibri, Arial, sans-serif"
+  font_size: "10.5pt"
   margin_size: "5px"
-  theme: "professional"
+  theme: "catppuccin-latte"
 paths:
   styles_dir: "./styles"
   template_file: "./templates/resume.html"
@@ -26,8 +40,8 @@ pdf:
   dpi: 300
   page_size: "A4"
   page_divisions: false
-  margin_top: 3
-  margin_bottom: 2
-  margin_left: 3
-  margin_right: 3
+  margin_top: 1
+  margin_bottom: 1
+  margin_left: 1
+  margin_right: 1
   unicode_enabled: true

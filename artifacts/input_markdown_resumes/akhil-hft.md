@@ -1,9 +1,6 @@
 # **Akhil Tiwari**
 
-Delhi, India | +91 8959815625  
-[Email](mailto:akhiltiwari.13@gmail.com) | [GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/)
-
----
+Delhi, India | +91 8959815625 | [Email](mailto:akhiltiwari.13@gmail.com) | [GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/)
 
 ## **SUMMARY**
 
@@ -59,13 +56,13 @@ Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrast
 
 ## **SKILLS & EDUCATION**
 
-**Languages:** C++ (11–20), Python, Go, Rust, Zig, Java, Bash  
-**Protocols:** FIX, SBE, Protobuf, Cap’n Proto, gRPC  
-**Infrastructure:** Ubuntu, RHEL, Arch Linux, EC2, S3, PostgreSQL  
-**Debugging/Profiling:** Tracy, GDB, Valgrind, libpcap++, Testplan  
-**Build & Tooling:** Bazel, CMake, Conan, Premake, Clang, GCC  
-**Messaging Systems:** Kafka, UltraMessaging (UM), RabbitMQ  
-**DevOps/CI:** Jenkins, GitHub, Nomad, Vault, Docker  
+**Languages:** C++ (11–20), Python, Go, Rust, Zig, Java, Bash
+**Protocols:** FIX, SBE, Protobuf, Cap’n Proto, gRPC
+**Infrastructure:** Ubuntu, RHEL, Arch Linux, EC2, S3, PostgreSQL
+**Debugging/Profiling:** Tracy, GDB, Valgrind, libpcap++, Testplan
+**Build & Tooling:** Bazel, CMake, Conan, Premake, Clang, GCC
+**Messaging Systems:** Kafka, UltraMessaging (UM), RabbitMQ
+**DevOps/CI:** Jenkins, GitHub, Nomad, Vault, Docker
 **NICs:** Solarflare X3, Exanic
 **Education:** Bachelor of Engineering from Devi Ahilya University, Indore – 78% (Hon.) (Jun 2011 – May 2015)
 
