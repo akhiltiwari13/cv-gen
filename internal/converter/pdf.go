@@ -54,6 +54,7 @@ func HTMLToPDF(htmlContent []byte, cfg *config.Config) error {
 		Int("margin_right", cfg.PDF.MarginRight).
 		Msg("Set PDF margins")
 
+	pdfg.NoCollate.Set(false)
 	// Set grayscale only for ATS mode
 	if cfg.Mode == "ats" {
 		pdfg.Grayscale.Set(true)

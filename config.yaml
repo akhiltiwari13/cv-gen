@@ -2,7 +2,7 @@
 general:
   input_file: "./artifacts/input_markdown_resumes/akhil-hft.md"
   output_file: "./artifacts/output_cvs/akhil_hft00.pdf"
-mode: "ats"
+mode: "custom"
 styling:
   font_family: "Arial, sans-serif"
   font_size: "12px"

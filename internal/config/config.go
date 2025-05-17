@@ -111,7 +111,7 @@ func validateConfig(cfg *Config) error {
 
 	// Validate theme
 	if cfg.Mode == "custom" {
-		validThemes := []string{"modern-clean", "tokyonight", "catppuccin-mocha", "catppuccin-latte", "nord", "github-dark"}
+		validThemes := []string{"professional", "tokyonight", "catppuccin-mocha", "catppuccin-latte", "nord", "github-dark"}
 		themeValid := false
 		for _, t := range validThemes {
 			if cfg.Styling.Theme == t {
@@ -155,6 +155,7 @@ func validateConfig(cfg *Config) error {
 
 // GetThemeCSSPath returns the path to the CSS file for the specified theme
 // @todo: (akhil) is this even needed? what's a normalized theme?
+// In internal/config/config.go
 func (cfg *Config) GetThemeCSSPath(themeName string) string {
 	// Normalize theme name to match config keys
 	normalizedTheme := themeName
@@ -163,8 +164,10 @@ func (cfg *Config) GetThemeCSSPath(themeName string) string {
 		normalizedTheme = "catppuccin_mocha"
 	case "catppuccin-latte":
 		normalizedTheme = "catppuccin_latte"
-	case "github-":
+	case "github-dark":
 		normalizedTheme = "github_dark"
+	case "professional":
+		normalizedTheme = "professional" // Ensure this case is handled
 	}
 
 	// Get theme file name from config
