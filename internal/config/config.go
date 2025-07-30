@@ -111,7 +111,7 @@ func validateConfig(cfg *Config) error {
 
 	// Validate theme
 	if cfg.Mode == "custom" {
-		validThemes := []string{"professional", "tokyonight", "catppuccin-mocha", "catppuccin-latte", "nord", "github-dark"}
+		validThemes := []string{"professional", "tokyonight", "catppuccin-mocha", "catppuccin-latte", "nord", "github-dark", "modern_clean", "base", "default"}
 		themeValid := false
 		for _, t := range validThemes {
 			if cfg.Styling.Theme == t {

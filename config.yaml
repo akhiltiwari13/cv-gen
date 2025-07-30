@@ -1,27 +1,94 @@
 # Resume Generator Configuration
 general:
   input_file: "./artifacts/input_markdown_resumes/akhil-hft.md"
-  output_file: "./artifacts/output_cvs/akhil_hft00.pdf"
+  # output_file: "./artifacts/output_cvs/akhil-ats.pdf"
+  # output_file: "./artifacts/output_cvs/akhil-cplatte.pdf"
+  # output_file: "./artifacts/output_cvs/akhil-cpmocha.pdf"
+  # output_file: "./artifacts/output_cvs/akhil-default.pdf"
+  # output_file: "./artifacts/output_cvs/akhil-ghdark.pdf"
+  output_file: "./artifacts/output_cvs/akhil-mclean.pdf"
+  # output_file: "./artifacts/output_cvs/akhil-nord.pdf"
+  # output_file: "./artifacts/output_cvs/akhil-resume.pdf"
+  # output_file: "./artifacts/output_cvs/akhil-tokyonight.pdf"
+  # output_file: "./artifacts/output_cvs/akhil-base.pdf"
+ 
+# mode: "ats"
 mode: "custom"
-# professional themed resume.
+
+# various styling options.
+# professional.
 # styling:
 #   font_family: "Arial, sans-serif"
-#   font_size: "12px"
-#   margin_size: "5px"
+#   font_size: "10px"
+#   margin_size: "4px"
 #   theme: "professional"
-# # catppuccin-mocha
+#   custom_css_path: "./styles/professional.css"
+  
+
+# catppuccin-mocha
 # styling:
 #   font_family: "JetBrains Mono, monospace"
-#   font_size: "10.5pt"
-#   margin_size: "5px"
+#   font_size: "10.0pt"
+#   margin_size: "4px"
 #   theme: "catppuccin-mocha"
+#   custom_css_path: "./styles/catppuccin-mocha.css"
 
 # catppuccin-latte
+# styling:
+#   font_family: "Calibri, Arial, sans-serif"
+#   font_size: "9.5pt"
+#   margin_size: "3px"
+#   theme: "catppuccin_latte"
+#   custom_css_path: "./styles/catppuccin-latte.css"
+
+# base
+# styling:
+#   font_family: "Calibri, Arial, sans-serif"
+#   font_size: "9.5pt"
+#   margin_size: "3px"
+#   theme: "base"
+#   custom_css_path: "./styles/base.css"
+
+# nord
+# styling:
+#   font_family: "Calibri, Arial, sans-serif"
+#   font_size: "9.5pt"
+#   margin_size: "3px"
+#   theme: "nord"
+#   custom_css_path: "./styles/nord.css"
+
+# tokyonight
+# styling:
+#   font_family: "Calibri, Arial, sans-serif"
+#   font_size: "9.5pt"
+#   margin_size: "3px"
+#   theme: "tokyonight"
+#   custom_css_path: "./styles/tokyonight.css"
+
+# default
+# styling:
+#   font_family: "Calibri, Arial, sans-serif"
+#   font_size: "9.5pt"
+#   margin_size: "3px"
+#   theme: "default"
+#   custom_css_path: "./styles/default.css"
+
+# modern-clean
 styling:
   font_family: "Calibri, Arial, sans-serif"
-  font_size: "10.5pt"
-  margin_size: "5px"
-  theme: "catppuccin-latte"
+  font_size: "9.5pt"
+  margin_size: "3px"
+  theme: "modern_clean"
+  custom_css_path: "./styles/modern-clean.css"
+
+# default
+# styling:
+#   font_family: "Calibri, Arial, sans-serif"
+#   font_size: "9.5pt"
+#   margin_size: "3px"
+#   theme: "default"
+#   custom_css_path: "./styles/default.css"
+
 paths:
   styles_dir: "./styles"
   template_file: "./templates/resume.html"
