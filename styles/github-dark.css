@@ -1,42 +1,29 @@
-/* Catppuccin Latte Theme - 1-page optimized */
+/* GitHub Dark Theme - 1-page optimized */
 body {
-  background-color: #eff1f5;
-  color: #4c4f69;
-  font-family: 'Calibri', 'Arial', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Consolas', 'Monaco', monospace;
   font-size: 10.5pt;
   line-height: 1.3;
   margin: 0.5in;
 }
 
-/* Name styling */
+/* Header/Name styling */
 h1 {
-  color: #d20f39;
+  color: #58a6ff;
   font-size: 18pt;
   font-weight: bold;
   margin-bottom: 5px;
   text-align: center;
 }
 
-/* Contact information on one line */
-p:first-of-type {
-  text-align: center;
-  margin-bottom: 10px;
-  white-space: nowrap;
-}
-
-p:first-of-type a {
-  color: #179299;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
 /* Section headers */
 h2 {
-  color: #8839ef;
+  color: #f85149;
   font-size: 11pt;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border-bottom: 1px solid #ccd0da;
+  border-bottom: 1px solid #30363d;
   padding-bottom: 3px;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -44,7 +31,7 @@ h2 {
 
 /* Job titles */
 h3 {
-  color: #1e66f5;
+  color: #7ee787;
   font-size: 11pt;
   font-weight: bold;
   margin-bottom: 5px;
@@ -53,8 +40,21 @@ h3 {
 
 /* Company links styling */
 h3 a {
-  color: #179299;
+  color: #58a6ff;
   text-decoration: none;
+}
+
+/* Contact information styling */
+p:first-of-type {
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+p:first-of-type a {
+  color: #58a6ff;
+  text-decoration: none;
+  margin: 0 5px;
 }
 
 /* List styling */
@@ -75,13 +75,13 @@ li::before {
   content: "•";
   position: absolute;
   left: 0;
-  color: #d20f39;
+  color: #f85149;
 }
 
 /* For date ranges and locations */
 .date-range {
   float: right;
-  color: #7c7f93;
+  color: #8b949e;
   font-size: 10pt;
 }
 
@@ -111,12 +111,12 @@ li::before {
 .skills-category {
   font-weight: bold;
   margin-right: 5px;
-  color: #df8e1d;
+  color: #ffa657;
 }
 
 /* Links */
 a {
-  color: #179299;
+  color: #58a6ff;
   text-decoration: none;
 }
 
@@ -126,12 +126,12 @@ a:hover {
 
 /* Blockquote for technology stack */
 blockquote {
-  background-color: #f8f9fa;
-  border-left: 3px solid #8839ef;
+  background-color: #161b22;
+  border-left: 3px solid #f85149;
   margin: 5px 0;
   padding: 5px 10px;
   font-size: 9.5pt;
-  color: #7c7f93;
+  color: #8b949e;
 }
 
 /* Experience bullets */

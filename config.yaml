@@ -6,12 +6,13 @@ general:
   # output_file: "./artifacts/output_cvs/akhil-cpmocha.pdf"
   # output_file: "./artifacts/output_cvs/akhil-default.pdf"
   # output_file: "./artifacts/output_cvs/akhil-ghdark.pdf"
-  output_file: "./artifacts/output_cvs/akhil-mclean.pdf"
+  # output_file: "./artifacts/output_cvs/akhil-mclean.pdf"
   # output_file: "./artifacts/output_cvs/akhil-nord.pdf"
   # output_file: "./artifacts/output_cvs/akhil-resume.pdf"
   # output_file: "./artifacts/output_cvs/akhil-tokyonight.pdf"
   # output_file: "./artifacts/output_cvs/akhil-base.pdf"
- 
+  output_file: "./artifacts/output_cvs/akhil-resume.pdf"
+
 # mode: "ats"
 mode: "custom"
 
@@ -23,7 +24,6 @@ mode: "custom"
 #   margin_size: "4px"
 #   theme: "professional"
 #   custom_css_path: "./styles/professional.css"
-  
 
 # catppuccin-mocha
 # styling:
@@ -74,12 +74,44 @@ mode: "custom"
 #   custom_css_path: "./styles/default.css"
 
 # modern-clean
+# styling:
+#   font_family: "Calibri, Arial, sans-serif"
+#   font_size: "10.5pt"
+#   margin_size: "0.5in"
+#   theme: "modern_clean"
+#   custom_css_path: "./styles/modern-clean.css"
+
+# minimal-light (new light theme)
+# styling:
+#   font_family: "Georgia, Times New Roman, serif"
+#   font_size: "10.5pt"
+#   margin_size: "0.5in"
+#   theme: "minimal_light"
+#   custom_css_path: "./styles/minimal-light.css"
+
+# elegant-light (new light theme)
+# styling:
+#   font_family: "Garamond, Times New Roman, serif"
+#   font_size: "10.5pt"
+#   margin_size: "0.5in"
+#   theme: "elegant_light"
+#   custom_css_path: "./styles/elegant-light.css"
+#
+# fresh-light (new light theme)
+# styling:
+#   font_family: "Helvetica Neue, Arial, sans-serif"
+#   font_size: "10.5pt"
+#   margin_size: "0.5in"
+#   theme: "fresh_light"
+#   custom_css_path: "./styles/fresh-light.css"
+
+# corporate-light (new light theme)
 styling:
   font_family: "Calibri, Arial, sans-serif"
-  font_size: "9.5pt"
-  margin_size: "3px"
-  theme: "modern_clean"
-  custom_css_path: "./styles/modern-clean.css"
+  font_size: "10.5pt"
+  margin_size: "0.5in"
+  theme: "corporate_light"
+  custom_css_path: "./styles/corporate-light.css"
 
 # default
 # styling:
@@ -103,6 +135,10 @@ paths:
     nord: "nord.css"
     github_dark: "github-dark.css"
     professional: "professional.css"
+    minimal_light: "minimal-light.css"
+    elegant_light: "elegant-light.css"
+    fresh_light: "fresh-light.css"
+    corporate_light: "corporate-light.css"
 pdf:
   dpi: 300
   page_size: "A4"
@@ -112,3 +148,9 @@ pdf:
   margin_left: 1
   margin_right: 1
   unicode_enabled: true
+
+# Logging configuration
+logging:
+  level: "info" # debug, info, warn, error
+  log_file: "" # Leave empty for stderr, or specify file path like "cv-gen.log"
+  pretty: true # Pretty print logs to console

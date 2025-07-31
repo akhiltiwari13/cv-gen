@@ -16,6 +16,7 @@ type Config struct {
 	Styling StylingConfig `yaml:"styling"`
 	Paths   PathsConfig   `yaml:"paths"`
 	PDF     PDFConfig     `yaml:"pdf"`
+	Logging LoggingConfig `yaml:"logging"`
 }
 
 // GeneralConfig contains general application settings
@@ -50,6 +51,13 @@ type PDFConfig struct {
 	MarginLeft     int    `yaml:"margin_left"`
 	MarginRight    int    `yaml:"margin_right"`
 	UnicodeEnabled bool   `yaml:"unicode_enabled"`
+}
+
+// LoggingConfig contains logging-related configurations
+type LoggingConfig struct {
+	Level    string `yaml:"level"`
+	LogFile  string `yaml:"log_file"`
+	Pretty   bool   `yaml:"pretty"`
 }
 
 // LoadConfig loads the configuration from a YAML file
@@ -111,7 +119,11 @@ func validateConfig(cfg *Config) error {
 
 	// Validate theme
 	if cfg.Mode == "custom" {
-		validThemes := []string{"professional", "tokyonight", "catppuccin-mocha", "catppuccin-latte", "nord", "github-dark", "modern_clean", "base", "default"}
+		validThemes := []string{
+			"professional", "tokyonight", "catppuccin-mocha", "catppuccin-latte", 
+			"nord", "github-dark", "modern_clean", "base", "default",
+			"minimal_light", "elegant_light", "fresh_light", "corporate_light",
+		}
 		themeValid := false
 		for _, t := range validThemes {
 			if cfg.Styling.Theme == t {
@@ -166,6 +178,14 @@ func (cfg *Config) GetThemeCSSPath(themeName string) string {
 		normalizedTheme = "catppuccin_latte"
 	case "github-dark":
 		normalizedTheme = "github_dark"
+	case "minimal-light":
+		normalizedTheme = "minimal_light"
+	case "elegant-light":
+		normalizedTheme = "elegant_light"
+	case "fresh-light":
+		normalizedTheme = "fresh_light"
+	case "corporate-light":
+		normalizedTheme = "corporate_light"
 	case "professional":
 		normalizedTheme = "professional" // Ensure this case is handled
 	}

@@ -61,6 +61,10 @@ func applyDefaults(cfg *Config) {
 			"nord":             "nord.css",
 			"github_dark":      "github-dark.css",
 			"professional":     "professional.css",
+			"minimal_light":    "minimal-light.css",
+			"elegant_light":    "elegant-light.css",
+			"fresh_light":      "fresh-light.css",
+			"corporate_light":  "corporate-light.css",
 		}
 		logger.Debug().Msg("Applied default theme files map")
 	} else {
@@ -108,5 +112,19 @@ func applyDefaults(cfg *Config) {
 		cfg.PDF.MarginRight = 10
 		logger.Debug().Int("margin_right", cfg.PDF.MarginRight).Msg("Applied default right margin")
 	}
+
+	// Logging defaults
+	if cfg.Logging.Level == "" {
+		cfg.Logging.Level = "info"
+		logger.Debug().Str("log_level", cfg.Logging.Level).Msg("Applied default log level")
+	}
+	if cfg.Logging.LogFile == "" {
+		cfg.Logging.LogFile = ""
+		logger.Debug().Str("log_file", cfg.Logging.LogFile).Msg("Applied default log file (stderr)")
+	}
+	// Pretty defaults to true for better readability
+	cfg.Logging.Pretty = true
+	logger.Debug().Bool("pretty", cfg.Logging.Pretty).Msg("Applied default pretty logging")
+
 	logger.Debug().Msg("Default values applied to configuration")
 }

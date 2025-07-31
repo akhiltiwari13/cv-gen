@@ -1,113 +1,131 @@
-/* ATS styling */
-/* styles/ats.css */
+/* ATS styling - 1-page optimized */
 /* ATS-friendly styling for maximum compatibility with Applicant Tracking Systems */
 
 body {
   background-color: #FFFFFF;
   color: #000000;
-  /* Use standard fonts for maximum compatibility */
   font-family: 'Arial', 'Helvetica', 'Calibri', sans-serif;
-  font-size: 11pt;
+  font-size: 10.5pt;
   line-height: 1.3;
   margin: 0.5in;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #000000;
-  font-family: 'Arial', 'Helvetica', 'Calibri', sans-serif;
-}
-
+/* Header/Name styling */
 h1 {
-  font-size: 16pt;
-  margin-bottom: 8pt;
+  color: #000000;
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 5px;
   text-align: center;
 }
 
+/* Section headers */
 h2 {
-  font-size: 12pt;
+  color: #000000;
+  font-size: 11pt;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
   border-bottom: 1pt solid #000000;
-  padding-bottom: 2pt;
-  margin-top: 14pt;
+  padding-bottom: 3px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
+/* Job titles */
 h3 {
+  color: #000000;
   font-size: 11pt;
   font-weight: bold;
-  margin-bottom: 2pt;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
-/* Make all links readable by ATS */
+/* Contact information styling */
+p:first-of-type {
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+p:first-of-type a {
+  color: #000000;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+
+/* List styling */
+ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 3px;
+  position: relative;
+  padding-left: 15px;
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000000;
+}
+
+/* For date ranges and locations */
+.date-range {
+  float: right;
+  color: #000000;
+  font-size: 10pt;
+}
+
+/* For company/institution names */
+.organization {
+  font-weight: bold;
+}
+
+/* Skills section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.skills-list li::before {
+  content: none;
+}
+
+.skills-category {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Links */
 a {
   color: #000000;
   text-decoration: underline;
 }
 
-/* Simple horizontal rules */
-hr {
-  border: none;
-  border-top: 1pt solid #000000;
-  margin: 10pt 0;
-}
-
-/* Plain emphasis */
-strong {
-  font-weight: bold;
-}
-
-em {
-  font-style: italic;
-}
-
-/* Simple list styling */
-ul, ol {
-  padding-left: 20pt;
-  margin: 5pt 0;
-}
-
-li {
-  margin-bottom: 3pt;
-}
-
-/* Ensure list markers are visible */
-ul li::marker {
-  color: #000000;
-}
-
-ol li::marker {
-  color: #000000;
-}
-
-/* Simple table styling */
-table, th, td {
-  border: 1px solid #000000;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 5pt;
-  text-align: left;
-}
-
-/* Blockquote styling */
+/* Blockquote for technology stack */
 blockquote {
-  margin: 5pt 0;
-  padding: 0 10pt;
-  border-left: 2pt solid #000000;
+  background-color: #f8f9fa;
+  border-left: 3px solid #000000;
+  margin: 5px 0;
+  padding: 5px 10px;
+  font-size: 9.5pt;
+  color: #000000;
 }
 
-/* Container for contact information */
-.contact-info {
-  text-align: center;
-  margin-bottom: 10pt;
-}
-
-/* Dates and locations */
-.date-range {
-  font-weight: normal;
-}
-
-/* Skills section */
-.skills-category {
-  font-weight: bold;
+/* Experience bullets */
+h3 + ul {
+  margin-top: 2px;
 }

@@ -1,76 +1,143 @@
-/* Modern Clean Theme with Catppuccin Latte colors */
+/* Modern Clean Theme - 1-page optimized */
 body {
-  background-color: #eff1f5 !important;
-  color: #4c4f69 !important;
-  font-family: 'Arial', sans-serif !important;
-  margin: 20px !important;
-  line-height: 1.5 !important;
+  background-color: #eff1f5;
+  color: #4c4f69;
+  font-family: 'Calibri', 'Arial', sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.3;
+  margin: 0.5in;
 }
 
 h1 {
-  color: #d20f39 !important;
-  font-size: 26px !important;
-  margin-bottom: 5px !important;
-  text-align: center !important;
+  color: #d20f39;
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 h2 {
-  color: #8839ef !important;
-  border-bottom: 2px solid #ccd0da !important;
-  padding-bottom: 5px !important;
-  margin-top: 20px !important;
-  font-size: 18px !important;
+  color: #8839ef;
+  font-size: 11pt;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #ccd0da;
+  padding-bottom: 3px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 h3 {
-  color: #1e66f5 !important;
-  font-size: 16px !important;
-  margin-bottom: 5px !important;
+  color: #1e66f5;
+  font-size: 11pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
-a {
-  color: #179299 !important;
-  text-decoration: none !important;
+/* Company links styling */
+h3 a {
+  color: #179299;
+  text-decoration: none;
 }
 
-hr {
-  background-color: #ccd0da !important;
-  height: 1px !important;
-  border: none !important;
-  margin: 15px 0 !important;
+/* Contact information styling */
+.contact-info {
+  text-align: center;
+  font-size: 10pt;
+  margin-bottom: 15px;
 }
 
-strong {
-  color: #df8e1d !important;
-  font-weight: bold !important;
+p:first-of-type {
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 10px;
 }
 
-em {
-  color: #40a02b !important;
+p:first-of-type a {
+  color: #179299;
+  text-decoration: none;
+  margin: 0 5px;
 }
 
+/* List styling */
 ul {
-  padding-left: 20px !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  list-style-type: none;
 }
 
 li {
-  margin-bottom: 5px !important;
-  color: #4c4f69 !important;
+  margin-bottom: 3px;
+  position: relative;
+  padding-left: 15px;
 }
 
-li::marker {
-  color: #d20f39 !important;
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #d20f39;
 }
 
-.primary-toolchain {
-  color: #04a5e5 !important;
-  font-style: italic !important;
-  margin-top: 5px !important;
-  font-size: 0.9em !important;
+/* For date ranges and locations */
+.date-range {
+  float: right;
+  color: #7c7f93;
+  font-size: 10pt;
 }
 
-/* Contact info styling */
-p:first-of-type {
-  text-align: center !important;
-  margin-bottom: 15px !important;
+/* For company/institution names */
+.organization {
+  font-weight: bold;
+}
+
+/* Skills section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.skills-list li::before {
+  content: none;
+}
+
+.skills-category {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #df8e1d;
+}
+
+/* Links */
+a {
+  color: #179299;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Blockquote for technology stack */
+blockquote {
+  background-color: #f8f9fa;
+  border-left: 3px solid #8839ef;
+  margin: 5px 0;
+  padding: 5px 10px;
+  font-size: 9.5pt;
+  color: #7c7f93;
+}
+
+/* Experience bullets */
+h3 + ul {
+  margin-top: 2px;
 }

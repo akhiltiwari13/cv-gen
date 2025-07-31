@@ -150,21 +150,34 @@ func loadStyles(cfg *config.Config) (string, error) {
 
 // DisplayAvailableThemes shows all available built-in themes
 func DisplayAvailableThemes() {
-	fmt.Println("Available Themes:")
+	fmt.Println("Available Themes (All optimized for 1-page resumes):")
+	
+	fmt.Println("\nProfessional Themes:")
+	fmt.Println("  - professional: Modern professional resume style (ATS compatible)")
 	fmt.Println("  - default: Clean, professional light theme")
-	fmt.Println("  - tokyonight: inspired by vim colorscheme of the same name")
-	fmt.Println("  - catppuccin-mocha: Dark Catppuccin theme with vibrant accents")
+	fmt.Println("  - ats: Maximum ATS compatibility with simple formatting")
+	
+	fmt.Println("\nLight Themes:")
+	fmt.Println("  - minimal-light: Clean and simple with serif fonts")
+	fmt.Println("  - elegant-light: Sophisticated with Garamond typography")
+	fmt.Println("  - fresh-light: Modern and vibrant with clean lines")
+	fmt.Println("  - corporate-light: Professional business style")
+	fmt.Println("  - modern-clean: Modern clean theme with Catppuccin Latte colors")
 	fmt.Println("  - catppuccin-latte: Light Catppuccin theme with pastel accents")
-	fmt.Println("  - nord: Cool blue-based dark theme")
+	
+	fmt.Println("\nDark Themes:")
+	fmt.Println("  - catppuccin-mocha: Dark Catppuccin theme with vibrant accents")
+	fmt.Println("  - nord: Cool blue-based dark theme with JetBrains Mono")
+	fmt.Println("  - tokyonight: Popular dark theme with purple and blue accents")
 	fmt.Println("  - github-dark: GitHub's dark mode theme")
 
 	fmt.Println("\nTo use a theme, specify it in your config.yaml file:")
 	fmt.Println("  mode: \"custom\"")
 	fmt.Println("  styling:")
-	fmt.Println("    theme: \"catppuccin-mocha\"")
+	fmt.Println("    theme: \"minimal-light\"")
 
 	fmt.Println("\nOr use the command line flag:")
-	fmt.Println("  go run main.go -mode custom -theme catppuccin-mocha")
+	fmt.Println("  ./cv-gen -mode custom -theme minimal-light")
 }
 
 // DisplayAvailableFonts lists fonts that might be available on the system

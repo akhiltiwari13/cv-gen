@@ -35,7 +35,7 @@ func main() {
 
 	flag.Parse()
 
-	// Initialize logger
+	// Initialize logger with basic settings first
 	logging.InitLogger(*logLevel, *prettyLog)
 	logger := logging.GetLogger()
 
@@ -62,14 +62,32 @@ func main() {
 		return
 	}
 
-
 	// Load configuration
 	logger.Debug().Str("config_file", *configFile).Msg("Loading configuration")
 	cfg, err := config.LoadConfig(*configFile)
-	log.Printf("Loaded config: Mode=%s, Theme=%s", cfg.Mode, cfg.Styling.Theme)
 	if err != nil {
 		log.Fatalf("Error loading configuration: %v", err)
 	}
+
+	// Re-initialize logger with config settings if not overridden by command line
+	configLogLevel := *logLevel
+	configPrettyLog := *prettyLog
+	configLogFile := ""
+	
+	if cfg.Logging.Level != "" && *logLevel == "info" { // Only use config if not overridden
+		configLogLevel = cfg.Logging.Level
+	}
+	if cfg.Logging.LogFile != "" {
+		configLogFile = cfg.Logging.LogFile
+	}
+	if !*prettyLog { // Command line flag takes precedence
+		configPrettyLog = cfg.Logging.Pretty
+	}
+	
+	// Re-initialize with final settings
+	logging.InitLoggerWithFile(configLogLevel, configPrettyLog, configLogFile)
+	logger = logging.GetLogger()
+
 
 	logger.Debug().
 		Str("input_file", cfg.General.InputFile).

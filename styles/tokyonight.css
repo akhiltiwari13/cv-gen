@@ -1,75 +1,140 @@
-/* TokyoNight Theme */
+/* TokyoNight Theme - 1-page optimized */
 body {
-  background-color: #1a1b26 !important;
-  color: #c0caf5 !important;
-  font-family: monospace !important;
-  margin: 5px !important;
-  line-height: 1.4 !important;
+  background-color: #1a1b26;
+  color: #c0caf5;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5pt;
+  line-height: 1.3;
+  margin: 0.5in;
 }
 
+/* Header/Name styling */
 h1 {
-  color: #bb9af7 !important;
-  font-size: 22px !important;
-  margin-bottom: 1px !important;
+  color: #bb9af7;
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
+/* Section headers */
 h2 {
-  color: #7aa2f7 !important;
-  border-bottom: 1px solid #414868 !important;
-  padding-bottom: 2px !important;
-  margin-top: 1px !important;
-  font-size: 18px !important;
+  color: #7aa2f7;
+  font-size: 11pt;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #414868;
+  padding-bottom: 3px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
+/* Job titles */
 h3 {
-  color: #9ece6a !important;
-  font-size: 16px !important;
+  color: #9ece6a;
+  font-size: 11pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
-a {
-  color: #7dcfff !important;
-  text-decoration: none !important;
-  border-bottom: 1px dotted #7dcfff !important;
+/* Company links styling */
+h3 a {
+  color: #7dcfff;
+  text-decoration: none;
 }
 
-hr {
-  background-color: #414868 !important;
-  height: 2px !important;
-  border: none !important;
-  margin: 5px 0 !important;
+/* Contact information styling */
+p:first-of-type {
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 10px;
 }
 
-strong {
-  color: #e0af68 !important;
-  font-weight: bold !important;
+p:first-of-type a {
+  color: #7dcfff;
+  text-decoration: none;
+  margin: 0 5px;
 }
 
-em {
-  color: #9ece6a !important;
-}
-
+/* List styling */
 ul {
-  padding-left: 15px !important;
-  list-style-type: disc !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  list-style-type: none;
 }
 
 li {
-  margin-bottom: 1px !important;
-  color: #c0caf5 !important;
+  margin-bottom: 3px;
+  position: relative;
+  padding-left: 15px;
 }
 
-li::marker {
-  color: #bb9af7 !important;
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #bb9af7;
 }
 
-.primary-toolchain {
-  color: #2ac3de !important;
-  font-style: italic !important;
-  margin-top: 1px !important;
-  font-size: 0.9em !important;
+/* For date ranges and locations */
+.date-range {
+  float: right;
+  color: #a9b1d6;
+  font-size: 10pt;
 }
 
-h3+p {
-  color: #a9b1d6 !important;
-  font-style: italic !important;
+/* For company/institution names */
+.organization {
+  font-weight: bold;
+}
+
+/* Skills section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.skills-list li::before {
+  content: none;
+}
+
+.skills-category {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #e0af68;
+}
+
+/* Links */
+a {
+  color: #7dcfff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Blockquote for technology stack */
+blockquote {
+  background-color: #24283b;
+  border-left: 3px solid #7aa2f7;
+  margin: 5px 0;
+  padding: 5px 10px;
+  font-size: 9.5pt;
+  color: #a9b1d6;
+}
+
+/* Experience bullets */
+h3 + ul {
+  margin-top: 2px;
 }
