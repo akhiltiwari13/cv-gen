@@ -1,16 +1,8 @@
 # Resume Generator Configuration
 general:
   input_file: "./artifacts/input_markdown_resumes/akhil-hft.md"
-  # output_file: "./artifacts/output_cvs/akhil-ats.pdf"
-  # output_file: "./artifacts/output_cvs/akhil-cplatte.pdf"
-  # output_file: "./artifacts/output_cvs/akhil-cpmocha.pdf"
-  # output_file: "./artifacts/output_cvs/akhil-default.pdf"
-  # output_file: "./artifacts/output_cvs/akhil-ghdark.pdf"
-  # output_file: "./artifacts/output_cvs/akhil-mclean.pdf"
-  # output_file: "./artifacts/output_cvs/akhil-nord.pdf"
-  # output_file: "./artifacts/output_cvs/akhil-resume.pdf"
-  # output_file: "./artifacts/output_cvs/akhil-tokyonight.pdf"
-  # output_file: "./artifacts/output_cvs/akhil-base.pdf"
+  # input_file: "./artifacts/input_markdown_resumes/real-akhil.md"
+  # input_file: "./artifacts/input_markdown_resumes/akhil-polyglot.md"
   output_file: "./artifacts/output_cvs/akhil-resume.pdf"
 
 # mode: "ats"
@@ -74,12 +66,12 @@ mode: "custom"
 #   custom_css_path: "./styles/default.css"
 
 # modern-clean
-# styling:
-#   font_family: "Calibri, Arial, sans-serif"
-#   font_size: "10.5pt"
-#   margin_size: "0.5in"
-#   theme: "modern_clean"
-#   custom_css_path: "./styles/modern-clean.css"
+styling:
+  font_family: "Calibri, Arial, sans-serif"
+  font_size: "10.5pt"
+  margin_size: "0.5in"
+  theme: "modern_clean"
+  custom_css_path: "./styles/modern-clean.css"
 
 # minimal-light (new light theme)
 # styling:
@@ -106,12 +98,12 @@ mode: "custom"
 #   custom_css_path: "./styles/fresh-light.css"
 
 # corporate-light (new light theme)
-styling:
-  font_family: "Calibri, Arial, sans-serif"
-  font_size: "10.5pt"
-  margin_size: "0.5in"
-  theme: "corporate_light"
-  custom_css_path: "./styles/corporate-light.css"
+# styling:
+#   font_family: "Calibri, Arial, sans-serif"
+#   font_size: "10.5pt"
+#   margin_size: "0.5in"
+#   theme: "corporate_light"
+#   custom_css_path: "./styles/corporate-light.css"
 
 # default
 # styling:

@@ -4,11 +4,16 @@ Delhi, India | +91 8959815625 | [Email](mailto:akhiltiwari.13@gmail.com) | [GitH
 
 ## **SUMMARY**
 
-Trading Systems Engineer with over 10 years of experience in HFT, low-latency infrastructure, and distributed platforms. Skilled in developing high-performance systems, quickly fixing production bugs, and optimizing solutions for global exchanges. I take full ownership of the system lifecycle, from design to tuning. Checkout this [prototype-trading-platfrom](https://github.com/akhiltiwari13/prototype-trading-platform), I created for apple-silicon macs (with a simulation mode...). Go try your strategies with it!
+Trading Systems Engineer with over 10 years of experience in HFT, low-latency infrastructure, and distributed platforms. Skilled in developing high-performance systems, quickly fixing production bugs, and optimizing solutions for global exchanges.
 
 ---
 
 ## **EXPERIENCE**
+
+### **CTO – [Quomptrade](https://www.quomptrade.com/), Delhi (June 2025 – Present)**
+
+- Creating a low-latency venue/instrument agnostic trading platform with reliable performance to minimize your monitoring headache.
+- Led the design and development of cruicial components like OMS, RMS exchange Gateways etc.
 
 ### **Lead Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Delhi (Oct 2024 – May 2025)**
 
@@ -49,8 +54,8 @@ Trading Systems Engineer with over 10 years of experience in HFT, low-latency in
 ### **Software Engineer – [Barclays](https://home.barclays/), Pune (Jun 2015 – May 2018)**
 
 - Worked on production bug fixes and toolchain integration tasks supporting For-Ex post-trade systems.
-- Built/Enhanced scripts for backend automation and integration of trading components including addition chron support for regular trading EOD updates.
-- Integrated HTTP and WebSocket communication support to the Message-Bus Publisher for regulatory data-updates on a dedicated polling thread.
+- Enhanced scripts for backend automation and integration of trading components for EOD updates.
+- Integrated HTTP and WebSocket communication support to the Message-Bus Publisher for regulatory data-updates.
 
 ---
 
@@ -72,6 +77,5 @@ Trading Systems Engineer with over 10 years of experience in HFT, low-latency in
 
 - **OpenShift Enterprise Development** — Dec 2017
 - **Appian 7.11 Designer 201** — Nov 2015
-- A [blogpost](https://deqode.com/blog/2019/02/12/eosio-smart-contracts/) to get started with eosio smart contracts
-- Multiple [blogpots](https://quomptrade.com/blog) pertaining to trading-related software discussions.
+- [Crypto Blogs](https://deqode.com/blog/2019/02/12/eosio-smart-contracts/) & [Blogs on everything trading-tech](https://quomptrade.com/blog).
 

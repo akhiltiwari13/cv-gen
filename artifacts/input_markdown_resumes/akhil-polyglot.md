@@ -7,11 +7,15 @@ Delhi, India | +91 8959815625
 
 ## **SUMMARY**
 
-Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrastructure, and distributed platforms. Known for crafting institutional grade performant platforms, debugging production bugs, and accelerating time-to-fix for critical issues. Strong ownership in end-to-end system design and testing across multiple global exchanges.
+Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrastructure, and distributed platforms. Known for crafting institutional grade performant platforms, debugging production bugs, and accelerating time-to-fix for critical issues.
 
 ---
 
 ## **EXPERIENCE**
+### **CTO – [Quomptrade](https://www.quomptrade.com/), Delhi (June 2025 – Present)**
+
+- Creating a low-latency venue/instrument agnostic trading platform with reliable performance to minimize your monitoring headache.
+- Led the design and development of cruicial components like OMS, RMS exchange Gateways etc.
 
 ### **Lead Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Bengaluru (Oct 2024 – Apr 2025)**
 
@@ -77,4 +81,4 @@ Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrast
 
 - **OpenShift Enterprise Development** — Dec 2017
 - **Appian 7.11 Designer 201** — Nov 2015
-- A [blogpost to get started with eosio smart contracts](https://deqode.com/blog/2019/02/12/eosio-smart-contracts/)
+- [Crypto Blogs](https://deqode.com/blog/2019/02/12/eosio-smart-contracts/) & [Blogs on everything trading-tech](https://quomptrade.com/blog).

@@ -1,18 +1,23 @@
 # **Akhil Tiwari**
 
-Delhi, India | +91 8959815625 | [Email](mailto:akhiltiwari.13@gmail.com) | [GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/)
+Delhi, India | +91 8959815625 | [Email](mailto:akhiltiwari.13@gmail.com) | [GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/) | [Website](https://quomptrade.com/)
 
 ## **SUMMARY**
 
-Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrastructure, and distributed trading platforms. Known for crafting institutional-grade performant systems, resolving production bugs rapidly, and delivering optimized solutions for global exchanges. Strong ownership in full system lifecycle, from architecture to performance tuning.
+Trading Systems Engineer with over 10 years of experience in HFT, low-latency infrastructure, and distributed platforms. Skilled in developing high-performance systems, quickly fixing production bugs, and optimizing solutions for global exchanges.
 
 ---
 
 ## **EXPERIENCE**
 
-### **Lead Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Bengaluru (Oct 2024 – Apr 2025)**
+### **CTO – [Quomptrade](https://www.quomptrade.com/), Delhi (June 2025 – Present)**
 
-- Built IOC (Immediate or Cancel) trading system with sub-microsecond latency including OMS, RMS and exchange integration.
+- Creating a low-latency venue/instrument agnostic trading platform with reliable performance to minimize your monitoring headache.
+- Led the design and development of cruicial components like OMS, RMS exchange Gateways etc.
+
+### **Lead Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Delhi (Oct 2024 – May 2025)**
+
+- Designed & Built an IOC (Immediate or Cancel) platform with sub-microsecond latency including OMS, RMS and exchange gateways.
 - Introduced detailed instrumentation and profiling using Tracy for bottleneck identification.
 - Modernized internal dependency management via Conan 2.0 for reproducible builds.
 - Diagnosed and resolved performance bottlenecks across key trading paths.
@@ -21,15 +26,15 @@ Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrast
 
 - Migrated critical Scala-based trading services to C++ for latency-sensitive execution.
 - Developed Kafka audit trail integration with custom C++ bindings for compliance.
-- Increased unit test coverage from 20% to 65% and mentored team on testing best practices.
+- Increased unit test coverage from 20% to 65% and mentored team on testing best practices across various data publishers.
 - Investigated and resolved packet loss and synchronization issues in production.
 
 ### **Execution Platform Developer – [Morgan Stanley](https://www.morganstanley.com/), Bengaluru (Jun 2021 – Oct 2023)**
 
 - Delivered smart order routers (SORs) for LATAM exchanges achieving ~27μs median latency.
 - Implemented self-cross prevention logic ensuring regulatory compliance.
+- Identified and fixed sytem-level queuing issues impacting latency for state-maintenance in trading systems.
 - Built Python simulation suite to automate 200+ exchange scenarios.
-- Identified and fixed kernel-level queuing issues impacting trade latency.
 
 ### **Trading Systems Engineer – [Edelweiss](https://www.edelweissfin.com/), Mumbai (May 2019 – Jun 2021)**
 
@@ -37,25 +42,28 @@ Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrast
 - Developed `.pcap`-based latency profiler for network observability.
 - Created compliant exchange gateways for MCX and NSE.
 - Rolled out real-time trading risk dashboards in collaboration with infra teams.
-- Designed and implemented a market data simulator for strategy testing by streaming market data into compressed binary files using Zstandard (zstd). Enabled real-time replay by decompressing data in a streaming fashion, significantly reducing storage overhead while preserving performance.
+- Implemented market data simulator for strategy testing by streaming market data into compressed binary files using zstd. Enabled replay by decompressing data in a streaming fashion.
 
 ### **Sr. Research Analyst – [Deqode](https://deqode.com/), Pune (May 2018 – May 2019)**
 
-- Designed and implemented “Blaze Protocol” in C++ delivering 16K TPS on-chain.
+- Designed and implemented “Blaze Blockchain Protocol” in C++ delivering 16K TPS (transactions-per-second) on-chain.
 - Led development of a centralized encrypted wallet system for token custody.
 - Built tokenomics and smart contracts across Ethereum, EOS, and Hyperledger networks.
 - Supported sandbox deployments for institutional blockchain clients.
 
 ### **Software Engineer – [Barclays](https://home.barclays/), Pune (Jun 2015 – May 2018)**
 
-- Worked on elementary bug fixing and toolchain integration tasks supporting FX trading systems.
-- Built scripts for backend automation and integration of trading components.
-- Integrated HTTP and WebSocket communication using libcurl and Boost ASIO, respectively. Employed a dedicated polling thread to maintain WebSocket responsiveness and ensure timely processing of incoming updates.
+- Built Spring-based APIs for core banking and C# UI apps for contact center.
+- Reduced UI latency by 15% by identifying redundant service calls and poor pagination.
+- Built fallback UIs to support continuity during vendor outages (T-Sys).
+- Maintained CI pipelines and participated in weekly UAT releases with global teams.
+- Developed business process management workflow from scratch for "consumer fraud" scenario.
 
 ---
 
 ## **SKILLS & EDUCATION**
 
+**Education:** Bachelor of Engineering from Devi Ahilya University, Indore – 78% (Hon.) (Jun 2011 – May 2015)
 **Languages:** C++ (11–20), Python, Go, Rust, Zig, Java, Bash
 **Protocols:** FIX, SBE, Protobuf, Cap’n Proto, gRPC
 **Infrastructure:** Ubuntu, RHEL, Arch Linux, EC2, S3, PostgreSQL
@@ -64,7 +72,6 @@ Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrast
 **Messaging Systems:** Kafka, UltraMessaging (UM), RabbitMQ
 **DevOps/CI:** Jenkins, GitHub, Nomad, Vault, Docker
 **NICs:** Solarflare X3, Exanic
-**Education:** Bachelor of Engineering from Devi Ahilya University, Indore – 78% (Hon.) (Jun 2011 – May 2015)
 
 ---
 
@@ -72,6 +79,4 @@ Trading Systems Engineer with 10+ years of expertise in HFT, low-latency infrast
 
 - **OpenShift Enterprise Development** — Dec 2017
 - **Appian 7.11 Designer 201** — Nov 2015
-- A [blogpost to get started with eosio smart contracts](https://deqode.com/blog/2019/02/12/eosio-smart-contracts/)
-
-<!-- @TODO: add atleat 3 more lines to the resume to cover the page -->
+- [Crypto Blogs](https://deqode.com/blog/2019/02/12/eosio-smart-contracts/) & [Blogs on everything trading-tech](https://quomptrade.com/blog).
