@@ -10,7 +10,7 @@ Trading Systems Engineer with over 10 years of experience in HFT, low-latency in
 
 ## **EXPERIENCE**
 
-### **CTO – [Quomptrade](https://www.quomptrade.com/), Delhi (June 2025 – Present)**
+### **Chief Technology Officer – [Quomptrade](https://www.quomptrade.com/), Delhi (June 2025 – Present)**
 
 - Creating a low-latency venue/instrument agnostic trading platform with reliable performance to minimize your monitoring headache.
 - Led the design and development of cruicial components like OMS, RMS exchange Gateways etc.
@@ -42,7 +42,6 @@ Trading Systems Engineer with over 10 years of experience in HFT, low-latency in
 - Developed `.pcap`-based latency profiler for network observability.
 - Created compliant exchange gateways for MCX and NSE.
 - Rolled out real-time trading risk dashboards in collaboration with infra teams.
-- Implemented market data simulator for strategy testing by streaming market data into compressed binary files using zstd. Enabled replay by decompressing data in a streaming fashion.
 
 ### **Sr. Research Analyst – [Deqode](https://deqode.com/), Pune (May 2018 – May 2019)**
 
@@ -56,7 +55,6 @@ Trading Systems Engineer with over 10 years of experience in HFT, low-latency in
 - Built Spring-based APIs for core banking and C# UI apps for contact center.
 - Reduced UI latency by 15% by identifying redundant service calls and poor pagination.
 - Built fallback UIs to support continuity during vendor outages (T-Sys).
-- Maintained CI pipelines and participated in weekly UAT releases with global teams.
 - Developed business process management workflow from scratch for "consumer fraud" scenario.
 
 ---

@@ -1,7 +1,7 @@
 # Resume Generator Configuration
 general:
-  input_file: "./artifacts/input_markdown_resumes/akhil-hft.md"
-  # input_file: "./artifacts/input_markdown_resumes/real-akhil.md"
+  # input_file: "./artifacts/input_markdown_resumes/akhil-hft.md"
+  input_file: "./artifacts/input_markdown_resumes/real-akhil.md"
   # input_file: "./artifacts/input_markdown_resumes/akhil-polyglot.md"
   output_file: "./artifacts/output_cvs/akhil-resume.pdf"
 
@@ -66,20 +66,20 @@ mode: "custom"
 #   custom_css_path: "./styles/default.css"
 
 # modern-clean
-styling:
-  font_family: "Calibri, Arial, sans-serif"
-  font_size: "10.5pt"
-  margin_size: "0.5in"
-  theme: "modern_clean"
-  custom_css_path: "./styles/modern-clean.css"
-
-# minimal-light (new light theme)
 # styling:
-#   font_family: "Georgia, Times New Roman, serif"
+#   font_family: "Calibri, Arial, sans-serif"
 #   font_size: "10.5pt"
 #   margin_size: "0.5in"
-#   theme: "minimal_light"
-#   custom_css_path: "./styles/minimal-light.css"
+#   theme: "modern_clean"
+#   custom_css_path: "./styles/modern-clean.css"
+
+# minimal-light (new light theme)
+styling:
+  font_family: "Georgia, Times New Roman, serif"
+  font_size: "10.5pt"
+  margin_size: "0.5in"
+  theme: "minimal_light"
+  custom_css_path: "./styles/minimal-light.css"
 
 # elegant-light (new light theme)
 # styling:
