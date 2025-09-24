@@ -1,9 +1,11 @@
 # Resume Generator Configuration
 general:
   # input_file: "./artifacts/input_markdown_resumes/akhil-hft.md"
-  input_file: "./artifacts/input_markdown_resumes/real-akhil.md"
   # input_file: "./artifacts/input_markdown_resumes/akhil-polyglot.md"
-  output_file: "./artifacts/output_cvs/akhil-resume.pdf"
+  input_file: "./artifacts/input_markdown_resumes/real-akhil.md"
+  # output_file: "./artifacts/output_cvs/akhil-hft.pdf"
+  # output_file: "./artifacts/output_cvs/akhil-ployg.pdf"
+  output_file: "./artifacts/output_cvs/akhil-cv.pdf"
 
 # mode: "ats"
 mode: "custom"

@@ -55,7 +55,6 @@ Trading Systems Engineer with over 10 years of experience in HFT, low-latency in
 
 - Worked on production bug fixes and toolchain integration tasks supporting For-Ex post-trade systems.
 - Enhanced scripts for backend automation and integration of trading components for EOD updates.
-- Integrated HTTP and WebSocket communication support to the Message-Bus Publisher for regulatory data-updates.
 
 ---
 
