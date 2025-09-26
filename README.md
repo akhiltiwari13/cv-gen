@@ -2,6 +2,7 @@
 
 This fork enhances the original Markdown-to-PDF Resume Generator with advanced styling options, custom themes optimized for 1-page resumes, font customization, improved Unicode character support, comprehensive logging, and multiple new light themes.
 [original readme](./README_original.md)
+Since this is essentially a markdown to pdf converter program, it can be used for generating cover-letters etc as well.
 
 ## Features
 

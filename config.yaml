@@ -3,7 +3,7 @@ general:
   # input_file: "./artifacts/input_markdown/akhil-hft.md"
   # input_file: "./artifacts/input_markdown/akhil-polyglot.md"
   # input_file: "./artifacts/input_markdown/real-akhil.md"
-  input_file: "./artifacts/input_markdown/akhil-cover-letter.md"
+  input_file: "./artifacts/input_markdown/oracle-cover-letter.md"
   # output_file: "./artifacts/output_cvs/akhil-hft.pdf"
   # output_file: "./artifacts/output_cvs/akhil-ployg.pdf"
   # output_file: "./artifacts/output_cvs/akhil-cv.pdf"
