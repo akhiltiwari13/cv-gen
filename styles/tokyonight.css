@@ -1,140 +1,140 @@
 /* TokyoNight Theme - 1-page optimized */
 body {
-  background-color: #1a1b26;
-  color: #c0caf5;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5pt;
-  line-height: 1.3;
-  margin: 0.5in;
+	background-color: #1a1b26;
+	color: #c0caf5;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 10.5pt;
+	line-height: 1.29;
+	margin: 0.5in;
 }
 
 /* Header/Name styling */
 h1 {
-  color: #bb9af7;
-  font-size: 18pt;
-  font-weight: bold;
-  margin-bottom: 5px;
-  text-align: center;
+	color: #bb9af7;
+	font-size: 18pt;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-align: center;
 }
 
 /* Section headers */
 h2 {
-  color: #7aa2f7;
-  font-size: 11pt;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  border-bottom: 1px solid #414868;
-  padding-bottom: 3px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+	color: #7aa2f7;
+	font-size: 11pt;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	border-bottom: 1px solid #414868;
+	padding-bottom: 3px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 /* Job titles */
 h3 {
-  color: #9ece6a;
-  font-size: 11pt;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-top: 10px;
+	color: #9ece6a;
+	font-size: 11pt;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 10px;
 }
 
 /* Company links styling */
 h3 a {
-  color: #7dcfff;
-  text-decoration: none;
+	color: #7dcfff;
+	text-decoration: none;
 }
 
 /* Contact information styling */
 p:first-of-type {
-  text-align: center;
-  white-space: nowrap;
-  margin-bottom: 10px;
+	text-align: center;
+	white-space: nowrap;
+	margin-bottom: 10px;
 }
 
 p:first-of-type a {
-  color: #7dcfff;
-  text-decoration: none;
-  margin: 0 5px;
+	color: #7dcfff;
+	text-decoration: none;
+	margin: 0 5px;
 }
 
 /* List styling */
 ul {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-left: 20px;
-  list-style-type: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 20px;
+	list-style-type: none;
 }
 
 li {
-  margin-bottom: 3px;
-  position: relative;
-  padding-left: 15px;
+	margin-bottom: 3px;
+	position: relative;
+	padding-left: 15px;
 }
 
 li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #bb9af7;
+	content: "•";
+	position: absolute;
+	left: 0;
+	color: #bb9af7;
 }
 
 /* For date ranges and locations */
 .date-range {
-  float: right;
-  color: #a9b1d6;
-  font-size: 10pt;
+	float: right;
+	color: #a9b1d6;
+	font-size: 10pt;
 }
 
 /* For company/institution names */
 .organization {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 /* Skills section */
 .skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .skills-list li {
-  margin-right: 15px;
-  margin-bottom: 5px;
+	margin-right: 15px;
+	margin-bottom: 5px;
 }
 
 .skills-list li::before {
-  content: none;
+	content: none;
 }
 
 .skills-category {
-  font-weight: bold;
-  margin-right: 5px;
-  color: #e0af68;
+	font-weight: bold;
+	margin-right: 5px;
+	color: #e0af68;
 }
 
 /* Links */
 a {
-  color: #7dcfff;
-  text-decoration: none;
+	color: #7dcfff;
+	text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* Blockquote for technology stack */
 blockquote {
-  background-color: #24283b;
-  border-left: 3px solid #7aa2f7;
-  margin: 5px 0;
-  padding: 5px 10px;
-  font-size: 9.5pt;
-  color: #a9b1d6;
+	background-color: #24283b;
+	border-left: 3px solid #7aa2f7;
+	margin: 5px 0;
+	padding: 5px 10px;
+	font-size: 9.5pt;
+	color: #a9b1d6;
 }
 
 /* Experience bullets */
-h3 + ul {
-  margin-top: 2px;
+h3+ul {
+	margin-top: 2px;
 }

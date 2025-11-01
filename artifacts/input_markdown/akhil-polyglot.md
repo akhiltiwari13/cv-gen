@@ -2,19 +2,18 @@
 
 Delhi, India | +91 8959815625 | [Email](mailto:akhiltiwari.13@gmail.com) | [GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/) | [Website](https://www.quomptrade.com)
 
----
-
 ## **SUMMARY**
 
-Performance-critical Trading Systems Engineer leveraging 10+ years of polyglot development (C++, Rust, Go, Zig) to build sub-microsecond HFT platforms. Specialized in transitioning from infrastructure development to quantitative strategy implementation across distributed trading ecosystems.
+Senior Quant dev leveraging 10+ years of polyglot development (C++, Rust, Go, Zig) to build sub-microsecond HFT platforms. Specialized in transitioning from infrastructure development to quantitative strategy implementation across distributed trading ecosystems.
 
 ---
 
 ## **EXPERIENCE**
 ### **CTO – [Quomptrade](https://www.quomptrade.com/), Delhi (June 2025 – Present)**
 
-- Creating a low-latency venue/instrument agnostic trading platform with reliable performance to minimize your monitoring headache.
-- Led the design and development of cruicial components such as OMS, RMS & exchange Gateways.
+- Leading the design and development of a low-latency venue & instrument agnostic trading platform SDK with reliable performance
+- Led the design and development of crucial components like OMS, RMS, Exchange Gateways etc.
+- Developed an Integrated Exchange Simulator for Back-testing trading models on the platform.
 
 ### **Lead Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Bengaluru (Oct 2024 – Apr 2025)**
 
@@ -60,6 +59,7 @@ Performance-critical Trading Systems Engineer leveraging 10+ years of polyglot d
 
 ## **SKILLS & EDUCATION**
 
+**Education:** Bachelor of Engineering in Information Technology from Devi Ahilya University, Indore – 78% (Hon.) (Jun 2011 – May 2015)
 **Languages:** C++ (11–20), Python, Rust, Go,, Zig, Scala, Java, C#, Bash, Javascript.
 **Tools:** Bazel, CMake, Conan, Premake, Docker, GCC, Clang, Cargo, Zig.
 **Debug/Profiling:** Tracy, GDB, Valgrind, libpcap++, Testplan, googletest, googlebenchmark, datadog, opentelemetry.
@@ -68,7 +68,6 @@ Performance-critical Trading Systems Engineer leveraging 10+ years of polyglot d
 **Distros/Infra:** PostgreSQL, Datadog, Ubuntu, RHEL, Arch, Debian.
 **BPM Suites** Appian, jBPM, IBMBpm.
 **NICs:** Solarflare X3, Exanic.
-**Education:** Bachelor of Engineering from Devi Ahilya University, Indore – 78% (Hon.) (Jun 2011 – May 2015)
 
 ---
 

@@ -1,13 +1,13 @@
 # Resume Generator Configuration
 general:
   # input_file: "./artifacts/input_markdown/akhil-hft.md"
-  # input_file: "./artifacts/input_markdown/akhil-polyglot.md"
+  input_file: "./artifacts/input_markdown/akhil-polyglot.md"
   # input_file: "./artifacts/input_markdown/real-akhil.md"
-  input_file: "./artifacts/input_markdown/oracle-cover-letter.md"
-  # output_file: "./artifacts/output_cvs/akhil-hft.pdf"
-  # output_file: "./artifacts/output_cvs/akhil-ployg.pdf"
-  # output_file: "./artifacts/output_cvs/akhil-cv.pdf"
-  output_file: "./artifacts/output_cvs/akhil-cover-letter.pdf"
+  # input_file: "./artifacts/input_markdown/oracle-cover-letter.md"
+  # output_file: "./artifacts/output_cvs/hft/akhil.pdf"
+  output_file: "./artifacts/output_cvs/polyglot-fintech/akhil.pdf"
+  # output_file: "./artifacts/output_cvs/vanila/akhil-cv.pdf"
+  # output_file: "./artifacts/output_cvs/cover-letter/akhil-cover-letter.pdf"
 
 # mode: "ats"
 mode: "custom"
@@ -15,16 +15,16 @@ mode: "custom"
 # various styling options.
 # professional.
 # styling:
-#   font_family: "Arial, sans-serif"
-#   font_size: "10px"
-#   margin_size: "4px"
-#   theme: "professional"
-#   custom_css_path: "./styles/professional.css"
+# font_family: "Arial, sans-serif"
+# font_size: "10px"
+# margin_size: "4px"
+# theme: "professional"
+# custom_css_path: "./styles/professional.css"
 
 # catppuccin-mocha
 # styling:
 #   font_family: "JetBrains Mono, monospace"
-#   font_size: "10.0pt"
+#   font_size: "9.8pt"
 #   margin_size: "4px"
 #   theme: "catppuccin-mocha"
 #   custom_css_path: "./styles/catppuccin-mocha.css"
@@ -34,7 +34,7 @@ mode: "custom"
 #   font_family: "Calibri, Arial, sans-serif"
 #   font_size: "9.5pt"
 #   margin_size: "3px"
-#   theme: "catppuccin_latte"
+#   theme: "catppuccin-latte"
 #   custom_css_path: "./styles/catppuccin-latte.css"
 
 # base
@@ -54,12 +54,12 @@ mode: "custom"
 #   custom_css_path: "./styles/nord.css"
 
 # tokyonight
-# styling:
-#   font_family: "Calibri, Arial, sans-serif"
-#   font_size: "9.5pt"
-#   margin_size: "3px"
-#   theme: "tokyonight"
-#   custom_css_path: "./styles/tokyonight.css"
+styling:
+  font_family: "Calibri, Arial, sans-serif"
+  font_size: "9.5pt"
+  margin_size: "3px"
+  theme: "tokyonight"
+  custom_css_path: "./styles/tokyonight.css"
 
 # default
 # styling:
@@ -78,13 +78,13 @@ mode: "custom"
 #   custom_css_path: "./styles/modern-clean.css"
 
 # minimal-light (new light theme)
-styling:
-  font_family: "Georgia, Times New Roman, serif"
-  font_size: "10.5pt"
-  margin_size: "0.5in"
-  theme: "minimal_light"
-  custom_css_path: "./styles/minimal-light.css"
-
+# styling:
+#   font_family: "Georgia, Times New Roman, serif"
+#   font_size: "10.5pt"
+#   margin_size: "0.5in"
+#   theme: "minimal_light"
+#   custom_css_path: "./styles/minimal-light.css"
+#
 # elegant-light (new light theme)
 # styling:
 #   font_family: "Garamond, Times New Roman, serif"
