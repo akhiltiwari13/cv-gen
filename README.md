@@ -80,7 +80,6 @@ go run ./cmd/cv-gen
 ./cv-gen -list-fonts
 ```
 
-
 ### Command-line Options
 
 | Option         | Description                | Default       |
@@ -143,11 +142,13 @@ logging:
 All themes are optimized for 1-page resumes with consistent formatting and spacing.
 
 ### Professional Themes
+
 - `professional` - Modern professional resume style (ATS compatible)
 - `default` - Clean, professional light theme
 - `ats` - Maximum ATS compatibility with simple formatting
 
 ### Light Themes
+
 - `minimal-light` - Clean and simple with serif fonts
 - `elegant-light` - Sophisticated with Garamond typography
 - `fresh-light` - Modern and vibrant with clean lines
@@ -156,6 +157,7 @@ All themes are optimized for 1-page resumes with consistent formatting and spaci
 - `catppuccin-latte` - Light Catppuccin theme with pastel accents
 
 ### Dark Themes
+
 - `catppuccin-mocha` - Dark Catppuccin theme with vibrant accents
 - `nord` - Cool blue-based dark theme with JetBrains Mono
 - `tokyonight` - Popular dark theme with purple and blue accents
@@ -182,6 +184,7 @@ logging:
 ```
 
 **Log Levels:**
+
 - `debug` - Detailed information for troubleshooting
 - `info` - General information about operations
 - `warn` - Warning messages for potential issues
@@ -192,10 +195,11 @@ logging:
 You can easily create your own themes:
 
 1. Create a new CSS file in the `styles/` directory following the 1-page optimization patterns
-2. Add the path to your theme in `config.yaml` under `paths.theme_files`
+1. Add the path to your theme in `config.yaml` under `paths.theme_files`
 3. Select your theme using `-theme your-theme-name`
 
 **Key CSS classes for 1-page optimization:**
+
 - Use `font-size: 10.5pt` for body text
 - Use `margin-top: 15px; margin-bottom: 10px` for section headers
 - Use `margin-bottom: 3px` for list items
@@ -212,4 +216,7 @@ When using `-mode ats`:
 - Keep your Markdown sections straightforward
 - Ensure contact info appears as plain text near the top
 - Avoid tables or columns
+
+  # create the empty dirs hft, polyglot-fintech, vanila and cover-letter using mkdir -p hft polyglot-fintech vanila cover-letter
+
 - Don't rely on complex formatting

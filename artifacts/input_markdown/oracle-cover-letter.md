@@ -1,4 +1,5 @@
 # **Akhil Tiwari**
+
 Delhi, India | +91 8959815625 | [Email](mailto:akhiltiwari.13@gmail.com) | [GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/) | [Website](https://quomptrade.com/)
 
 ---
@@ -7,7 +8,7 @@ Delhi, India | +91 8959815625 | [Email](mailto:akhiltiwari.13@gmail.com) | [GitH
 
 Dear Team,
 
-I am writing to express my strong interest in Software Engineering position at Decisal. With over 10 years of specialized experience building ultra-low latency systems achieving sub-microsecond performance, I bring deep expertise in designing and optimizing the mission-critical infrastructure that powers modern high-frequency trading.
+I am writing to express my strong interest in Software Engineering position at Bloomberg. With over 10 years of specialized experience building ultra-low latency systems achieving sub-microsecond performance, I bring deep expertise in designing and optimizing the mission-critical infrastructure that powers modern high-frequency trading.
 
 **Proven Track Record in Ultra-Low Latency Systems**
 
@@ -37,12 +38,12 @@ My experience extends beyond traditional finance into blockchain systems, where 
 **Commitment to Excellence**
 I am passionate about pushing the boundaries of what's possible in trading technology. My approach combines rigorous engineering discipline with creative problem-solving, whether it's achieving nanosecond-level optimizations, implementing novel data structures, or creating systems that scale to millions of messages per second.
 
-I am particularly excited about Decisal's product-suite and believe my proven track record of building world-class trading infrastructure would make me a valuable addition to your team. I am ready to contribute immediately to your most challenging latency and throughput objectives.
+I am particularly excited about Bloomberg's product-suite and believe my proven track record of building world-class trading infrastructure would make me a valuable addition to your team. I am ready to contribute immediately to your most challenging latency and throughput objectives.
 
-Thank you for considering my application. I look forward to discussing how my expertise can help Decisal maintain its competitive edge in this ever-evolving world for computing.
+Thank you for considering my application. I look forward to discussing how my expertise can help Bloomberg maintain its competitive edge in this ever-evolving world for computing.
 
 Sincerely,  
 Akhil Tiwari
-[Quomptrade](https://www.quomptrade.com/) 
+[Quomptrade](https://www.quomptrade.com/)
 
 ---

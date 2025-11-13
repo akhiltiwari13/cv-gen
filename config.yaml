@@ -1,25 +1,30 @@
 # Resume Generator Configuration
 general:
   # input_file: "./artifacts/input_markdown/akhil-hft.md"
-  input_file: "./artifacts/input_markdown/akhil-polyglot.md"
+  # input_file: "./artifacts/input_markdown/akhil-tillaq.md"
+  # input_file: "./artifacts/input_markdown/resume-bloomberg.md"
+  input_file: "./artifacts/input_markdown/bloomberg-cover-letter.md"
+  # input_file: "./artifacts/input_markdown/akhil-polyglot.md"
   # input_file: "./artifacts/input_markdown/real-akhil.md"
   # input_file: "./artifacts/input_markdown/oracle-cover-letter.md"
+  # create the empty dirs hft, polyglot-fintech, vanila and cover-letter using mkdir -p hft polyglot-fintech vanila cover-letter
   # output_file: "./artifacts/output_cvs/hft/akhil.pdf"
-  output_file: "./artifacts/output_cvs/polyglot-fintech/akhil.pdf"
+  output_file: "./artifacts/output_cvs/cover-letter/bloomberg-coverletter.pdf"
+  # output_file: "./artifacts/output_cvs/polyglot-fintech/akhil.pdf"
+  # output_file: "./artifacts/output_cvs/akhil.pdf"
   # output_file: "./artifacts/output_cvs/vanila/akhil-cv.pdf"
-  # output_file: "./artifacts/output_cvs/cover-letter/akhil-cover-letter.pdf"
 
 # mode: "ats"
 mode: "custom"
 
 # various styling options.
 # professional.
-# styling:
-# font_family: "Arial, sans-serif"
-# font_size: "10px"
-# margin_size: "4px"
-# theme: "professional"
-# custom_css_path: "./styles/professional.css"
+styling:
+font_family: "Arial, sans-serif"
+font_size: "10px"
+margin_size: "4px"
+theme: "professional"
+custom_css_path: "./styles/professional.css"
 
 # catppuccin-mocha
 # styling:
@@ -54,12 +59,12 @@ mode: "custom"
 #   custom_css_path: "./styles/nord.css"
 
 # tokyonight
-styling:
-  font_family: "Calibri, Arial, sans-serif"
-  font_size: "9.5pt"
-  margin_size: "3px"
-  theme: "tokyonight"
-  custom_css_path: "./styles/tokyonight.css"
+# styling:
+#   font_family: "Calibri, Arial, sans-serif"
+#   font_size: "9.5pt"
+#   margin_size: "3px"
+#   theme: "tokyonight"
+#   custom_css_path: "./styles/tokyonight.css"
 
 # default
 # styling:
