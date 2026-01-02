@@ -8,7 +8,7 @@ Delhi, India | +91 8959815625 | [Email](mailto:akhiltiwari.13@gmail.com) | [GitH
 
 Dear Team,
 
-I am writing to express my strong interest in the C++/Platform Development position at [Company Name]. With over 10 years of specialized experience building ultra-low latency trading systems achieving sub-microsecond performance, I bring deep expertise in designing and optimizing the mission-critical infrastructure that powers modern high-frequency trading.
+I am writing to express my strong interest in the C++/Platform Development position at Tower Research Capital. With over 10 years of specialized experience building ultra-low latency trading systems achieving sub-microsecond performance, I bring deep expertise in designing and optimizing the mission-critical infrastructure that powers modern high-frequency trading.
 
 **Proven Track Record in Ultra-Low Latency Systems**
 
@@ -40,12 +40,11 @@ My experience extends beyond traditional finance into blockchain systems, where 
 
 I am passionate about pushing the boundaries of what's possible in trading technology. My approach combines rigorous engineering discipline with creative problem-solving, whether it's achieving nanosecond-level optimizations, implementing novel data structures, or architecting systems that scale to millions of messages per second.
 
-I am particularly excited about [Company Name]'s [mention specific technology/market focus if known] and believe my proven track record of building world-class trading infrastructure would make me a valuable addition to your team. I am ready to contribute immediately to your most challenging latency and throughput objectives.
+I am particularly excited about contributing to TRC's  low-latency trading infrastructure and believe my proven track record of building world-class trading infrastructure would make me a valuable addition to your team. I am ready to contribute immediately to your most challenging latency and throughput objectives.
 
-Thank you for considering my application. I look forward to discussing how my expertise can help [Company Name] maintain its competitive edge in high-frequency trading.
+Thank you for considering my application. I look forward to discussing how my expertise can help Tower Research Capital maintain its competitive edge in high-frequency trading.
 
 Sincerely,  
 Akhil Tiwari
-[Quomptrade](https://www.quomptrade.com/)
 
 ---

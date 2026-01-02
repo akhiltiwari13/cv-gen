@@ -1,14 +1,15 @@
 # **Akhil Tiwari**
 
-Delhi, India | +91 8959815625 | [Email](mailto:akhiltiwari.13@gmail.com) | [GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/) | [Website](https://www.quomptrade.com)
+Delhi, India | +91 8959815625 | [Email](mailto:akhiltiwari.13@gmail.com) | [GitHub](https://github.com/akhiltiwari13) | [LinkedIn](https://www.linkedin.com/in/akhiltiwari-13/) | [Website](https://www.quomptrade.com) | [StackOverflow](https://stackoverflow.com/users/5161544/akhil-tiwari)
 
 ## **SUMMARY**
 
-Senior Quant dev leveraging 10+ years of polyglot development (C++, Rust, Go, Zig) to build sub-microsecond HFT platforms. Specialized in transitioning from infrastructure development to quantitative strategy implementation across distributed trading ecosystems.
+Senior Trading-Platform/Quant dev leveraging 10+ years of polyglot development (C++, Rust, Go) to build sub-microsecond HFT platforms. Specialized in transitioning from infrastructure development to quantitative strategy implementation across distributed trading ecosystems.
 
 ---
 
 ## **EXPERIENCE**
+
 ### **CTO – [Quomptrade](https://www.quomptrade.com/), Delhi (June 2025 – Present)**
 
 - Leading the design and development of a low-latency venue & instrument agnostic trading platform SDK with reliable performance
