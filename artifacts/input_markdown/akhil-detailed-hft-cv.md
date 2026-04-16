@@ -12,14 +12,28 @@ Trading Systems Engineer with over 10 years of experience in HFT, low-latency in
 
 ### **CTO – [Quomptrade](https://www.quomptrade.com/), Delhi (June 2025 – Present)**
 
+**Anonymous — Trad-Fi Trading Platform**
+
 - Developed a low-latency venue & instrument agnostic trading platform SDK achieving **~64ns book updates**, **~50ns level access**, and **~70ns top-of-book insertions**.
 - Built high-performance infrastructure layer with **~95ns async logging** and **~38ns throttler checks**.
 - Led the design and development of crucial components like OMS, RMS, Exchange Gateways etc.
 - Developed an Integrated Exchange Simulator for Back-testing trading models on the platform.
+
+**Anonymous — Crypto Market-Making (Nautilus/Python & Rust)**
+
 - Built a Rust-native DEX perpetuals adapter (**37K+ LOC**) for an on-chain V4 venue — gRPC execution flow, transaction-manager order submission, block-lifecycle-aware quote refresh, and ledger-based position reconciliation — and shipped it to mainnet.
 - Engineered a Python hedged market-making strategy (**10.6K-LOC core**, **283 passing tests**) orchestrating **five crypto venues** with a state-machine runtime (startup-sync → normal → risk-lock → protective-stop), dynamic slippage, and execution-mirror position reconciliation.
 - Shipped a Redis-streams telemetry bridge (XADD/XREAD) publishing KPI, runtime-state, and exposure snapshots, fronted by a FastAPI WebSocket relay + React dashboard with JWT/RBAC bridge commands (pause-quoting, cancel-all, request-snapshot); **26 new integration tests**, backward-compatible fallback to in-process mode.
 - Architected multi-venue hedge routing (venue ranking by health, KPI compliance, and execution latency) and extended a CEX Rust client with an order-amend (modify) endpoint to cut stale-quote risk across dYdX / AX / Bybit / Hyperliquid / Binance.
+
+**Anonymous — CEX Market-Making Bot (C++)**
+
+- Built a C++ market-making bot for a centralized exchange with async REST client and connection pooling, achieving **~42x latency improvement** on the order placement/cancellation hot path.
+- Migrated exchange message parsing from nlohmann JSON to **simdjson**, with new parsers for WebSocket order updates, book ticker, and candlestick feeds.
+- Implemented trading resilience features: WebSocket market data staleness detection with REST fallback, inventory skew monitoring with auto-stop, API error recovery with consecutive failure tracking and auto-pause, and rate limit compliance.
+- Developed full management-system integration — bot state machine, command processing (start/stop/rebalance), cycle reports, telemetry logging, and lightweight ACK protocol over WebSocket.
+- Built a management-system simulator for end-to-end testing, benchmark suites for event queue/WebSocket/order generation, and **7 strategy test scenarios** covering varying aggressiveness, volatility, and budget constraints.
+- Deployed to AWS with CI via GitHub Actions; added symbol-normalization guards and API-key scrubbing for production hardening.
 
 ### **Lead Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Delhi (Oct 2024 – May 2025)**
 
