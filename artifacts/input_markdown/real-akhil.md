@@ -12,8 +12,11 @@ Trading Systems Engineer with over 10 years of experience in HFT, low-latency in
 
 ### **Chief Technology Officer – [Quomptrade](https://www.quomptrade.com/), Delhi (June 2025 – Present)**
 
-- Creating a low-latency venue/instrument agnostic trading platform with reliable performance to minimize your monitoring headache.
-- Led the design and development of cruicial components like OMS, RMS exchange Gateways etc.
+- Developing a low-latency venue/instrument agnostic trading platform SDK with OMS, RMS, and Exchange Gateways.
+- Built a Rust-native DEX perpetuals adapter (37K+ LOC) for an on-chain V4 venue — gRPC execution flow, transaction-manager order submission, block-lifecycle-aware quote refresh, and ledger-based position reconciliation — and shipped it to mainnet.
+- Engineered a Python hedged market-making strategy (10.6K-LOC core, 283 passing tests) orchestrating five crypto venues with a state-machine runtime (startup-sync → normal → risk-lock → protective-stop), dynamic slippage, and execution-mirror position reconciliation.
+- Shipped a Redis-streams telemetry bridge (XADD/XREAD) publishing KPI, runtime-state, and exposure snapshots, fronted by a FastAPI WebSocket relay + React dashboard with JWT/RBAC bridge commands (pause-quoting, cancel-all, request-snapshot); 26 new integration tests, backward-compatible fallback to in-process mode.
+- Architected multi-venue hedge routing (venue ranking by health, KPI compliance, and execution latency) and extended a CEX Rust client with an order-amend (modify) endpoint to cut stale-quote risk across dYdX / AX / Bybit / Hyperliquid / Binance.
 
 ### **Lead Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Delhi (Oct 2024 – May 2025)**
 

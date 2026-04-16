@@ -12,9 +12,10 @@ Senior Trading-Platform/Quant dev leveraging 10+ years of polyglot development (
 
 ### **CTO – [Quomptrade](https://www.quomptrade.com/), Delhi (June 2025 – Present)**
 
-- Leading the design and development of a low-latency venue & instrument agnostic trading platform SDK with reliable performance
-- Led the design and development of crucial components like OMS, RMS, Exchange Gateways etc.
-- Developed an Integrated Exchange Simulator for Back-testing trading models on the platform.
+- Developing a low-latency venue & instrument agnostic trading platform SDK. Led the design of OMS, RMS, Exchange Gateways and an Integrated Exchange Simulator for back-testing.
+- Built a Rust + Python (PyO3/Cython) crypto trading platform for a client, running hedged market-making and volume strategies across CEX (Architect Exchange) and DEX (dYdX) venues.
+- Designed Redis-based streaming bridge for strategy telemetry and a React trading dashboard for live KPI, exposure, PnL, and multi-venue hedge state monitoring.
+- Managed production deployment on AWS EC2 via Terraform with blue/green rollouts and automated validation gates.
 
 ### **Lead Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Bengaluru (Oct 2024 – Apr 2025)**
 

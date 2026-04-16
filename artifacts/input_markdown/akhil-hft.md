@@ -12,9 +12,11 @@ Trading Systems Engineer with over 10 years of experience in HFT, low-latency in
 
 ### **CTO – [Quomptrade](https://www.quomptrade.com/), Delhi (June 2025 – Present)**
 
-- Developed a low-latency venue & instrument agnostic trading platform SDK with reliable performance
-- Led the design and development of crucial components like OMS, RMS, Exchange Gateways etc.
-- Developed an Integrated Exchange Simulator for Back-testing trading models on the platform.
+- Developing a low-latency venue & instrument agnostic trading platform SDK with reliable performance. Led the design of OMS, RMS, Exchange Gateways and an Integrated Exchange Simulator for back-testing.
+- Built a Rust-native DEX perpetuals adapter (37K+ LOC) for an on-chain V4 venue — gRPC execution flow, transaction-manager order submission, block-lifecycle-aware quote refresh, and ledger-based position reconciliation — and shipped it to mainnet.
+- Engineered a Python hedged market-making strategy (10.6K-LOC core, 283 passing tests) orchestrating five crypto venues with a state-machine runtime (startup-sync → normal → risk-lock → protective-stop), dynamic slippage, and execution-mirror position reconciliation.
+- Shipped a Redis-streams telemetry bridge (XADD/XREAD) publishing KPI, runtime-state, and exposure snapshots, fronted by a FastAPI WebSocket relay + React dashboard with JWT/RBAC bridge commands (pause-quoting, cancel-all, request-snapshot); 26 new integration tests, backward-compatible fallback to in-process mode.
+- Architected multi-venue hedge routing (venue ranking by health, KPI compliance, and execution latency) and extended a CEX Rust client with an order-amend (modify) endpoint to cut stale-quote risk across dYdX / AX / Bybit / Hyperliquid / Binance.
 
 ### **Lead Platform Engineer – [AlgoQuant](https://www.algoquantfintech.com/), Delhi (Oct 2024 – May 2025)**
 
@@ -60,11 +62,11 @@ Trading Systems Engineer with over 10 years of experience in HFT, low-latency in
 **Education:** Bachelor of Engineering in Information Technology from Devi Ahilya University, Indore – 78% (Hon.) (Jun 2011 – May 2015)
 **Languages:** C++ (11–23), Python, Rust, Go, Zig, Java, Bash/zsh/fish
 **Protocols:** FIX, SBE, Protobuf,  gRPC
-**Infrastructure:** Ubuntu, RHEL, Fedora, Arch Linux, EC2, S3, PostgreSQL
+**Infrastructure:** Ubuntu, RHEL, Fedora, Arch Linux, EC2, S3, PostgreSQL, Redis
 **Debugging/Profiling:** Tracy, GDB, Valgrind, libpcap++, Testplan, Feathertrace, gprof
-**Build & Tooling:**  CMake, Conan, Bazel, Premake, Clang, GCC
-**Messaging Systems:** Kafka, UltraMessaging (UM), RabbitMQ
-**DevOps/CI:** Jenkins, GitHub, Nomad, Vault, Docker
+**Build & Tooling:**  CMake, Conan, Bazel, Premake, Clang, GCC, Cargo
+**Messaging Systems:** Kafka, UltraMessaging (UM), RabbitMQ, Redis Streams
+**DevOps/CI:** Jenkins, GitHub, Nomad, Vault, Docker, Terraform
 **NICs:** Solarflare X3, Exanic
 
 ---
